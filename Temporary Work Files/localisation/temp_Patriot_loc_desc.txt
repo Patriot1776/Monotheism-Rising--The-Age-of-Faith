@@ -1,0 +1,176 @@
+##################################Jewish Tribal Traits#################################################
+levi;Tribe of Levi;;;;;;;;;;;;;x
+levi_desc;The Tribe of Levi is from where all the priests come from.;;;;;;;;;;;;;x
+davidic_line;Line of David;;;;;;;;;;;;;x
+davidic_line_desc;The line of David is the unbroken lineage back to King David.;;;;;;;;;;;;;x
+yudah;Tribe of Yudah;;;;;;;;;;;;;x
+yudah_desc;The Tribe of Yudah is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+manasseh;Tribe of Manasseh;;;;;;;;;;;;;x
+manasseh_desc;The Tribe of Manasseh is one of the twelve tribes of Israel. They split from the Tribe of Joseph.;;;;;;;;;;;;;x
+ephraim;The Tribe of Ephraim;;;;;;;;;;;;;x
+ephraim_desc;The Tribe of Ephraim is one of the twelve tribes of Israel. They are the second tribe to split from the Tribe of Joseph.;;;;;;;;;;;;;x
+dan;Tribe of Dan;;;;;;;;;;;;;x
+dan_desc;The Tribe of Dan is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+reuven;Tribe of Reuven;;;;;;;;;;;;;x
+reuven_desc;The Tribe of Reuven is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+simeon;Tribe of Simeon;;;;;;;;;;;;;x
+simeon_desc;The Tribe of Simeon is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+naphatali;Tribe of Naphatali;;;;;;;;;;;;;x
+naphatali_desc;The Tribe of Naphatali is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+gad;Tribe of Gad;;;;;;;;;;;;;x
+gad_desc;The Tribe of Gad is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+asher;Tribe of Asher;;;;;;;;;;;;;x
+asher_desc;The Tribe of Asher is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+issachar;Tribe of Issachar;;;;;;;;;;;;;x
+issachar_desc;The Tribe of Issachar is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+zebulun;Tribe of Zebulun;;;;;;;;;;;;;x
+zebulun_desc;The Tribe of Zebulun is one of the twelve tribes of Israel.;;;;;;;;;;;;;x
+joseph;Tribe of Joseph;;;;;;;;;;;;;x
+joseph_desc;The Tribe of Joseph is one of the twelve tribes of Israel. It is the parent tribe for Ephraim and Manasseh.;;;;;;;;;;;;;x
+benjamin;Tribe of Benjamin;;;;;;;;;;;;;x
+benjamin_desc;The Tribe of Benjamin is one of the twelve tribes of Israel and the tribe of the Line of David.;;;;;;;;;;;;;x
+####################################Jewish Buildings##########################################################
+ca_jq_1;Castle Jewish Quarters Level 1;;;;;;;;;;;;;x
+ca_jq_1_desc;These Jewish Quarters are primitive and basic structures that provide basic protection from the elements.;;;;;;;;;;;;;x
+ca_jq_2;Castle Jewish Quarters Level 2;;;;;;;;;;;;;x
+ca_jq_2_desc;These Jewish Quarters are made of simple wooden structures and a definite upgrade to the tents.;;;;;;;;;;;;;x
+ca_jq_3;Castle Jewish Quarters Level 3;;;;;;;;;;;;;x
+ca_jq_3_desc;These Jewish Quarters are a combination of wooden and stone structures.;;;;;;;;;;;;;x
+ca_jq_4;Castle Jewish Quarters Level 4;;;;;;;;;;;;;x
+ca_jq_4_desc;The castle's Jewish Quarters have all been upgraded to stone structures.;;;;;;;;;;;;;x
+ca_jm_1;Castle Jewish Merchants Level 1;;;;;;;;;;;;;x
+ca_jm_1_desc;The Jewish merchants use temporary stalls to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ca_jm_2;Castle Jewish Merchants Level 2;;;;;;;;;;;;;x
+ca_jm_2_desc;The Jewish merchants use simple wooden buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ca_jm_3;Castle Jewish Merchants Level 3;;;;;;;;;;;;;x
+ca_jm_3_desc;The Jewish merchants use a combination of wooden and stone buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ca_jm_4;Castle Jewish Merchants Level 4;;;;;;;;;;;;;x
+ca_jm_4_desc;The Jewish merchants use stone buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ci_jq_1;City Jewish Quarters Level 1;;;;;;;;;;;;;x
+ci_jq_1_desc;These Jewish Quarters are primitive and basic structures that provide basic protection from the elements.;;;;;;;;;;;;;x
+ci_jq_2;City Jewish Quarters Level 2;;;;;;;;;;;;;x
+ci_jq_2_desc;These Jewish Quarters are made of simple wooden structures and a definite upgrade to the tents.;;;;;;;;;;;;;x
+ci_jq_3;City Jewish Quarters Level 3;;;;;;;;;;;;;x
+ci_jq_3_desc;These Jewish Quarters are a combination of wooden and stone structures.;;;;;;;;;;;;;x
+ci_jq_4;City Jewish Quarters Level 4;;;;;;;;;;;;;x
+ci_jq_4_desc;The city's Jewish Quarters have all been upgraded to stone structures.;;;;;;;;;;;;;x
+ci_jm_1;City Jewish Merchants Level 1;;;;;;;;;;;;;x
+ci_jm_1_desc;The Jewish merchants use temporary stalls to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ci_jm_2;City Jewish Merchants Level 2;;;;;;;;;;;;;x
+ci_jm_2_desc;The Jewish merchants use simple wooden buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ci_jm_3;City Jewish Merchants Level 3;;;;;;;;;;;;;x
+ci_jm_3_desc;The Jewish merchants use a combination of wooden and stone buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+ci_jm_4;City Jewish Merchants Level 4;;;;;;;;;;;;;x
+ci_jm_4_desc;The Jewish merchants use stone buildings to conduct business in the merchant quarter.;;;;;;;;;;;;;x
+tm_jq_1;Temple Jewish Quarters Level 1;;;;;;;;;;;;;x
+tm_jq_1_desc;These Jewish Quarters are primitive and basic structures that provide basic protection from the elements.;;;;;;;;;;;;;x
+tm_jq_2;Temple Jewish Quarters Level 2;;;;;;;;;;;;;x
+tm_jq_2_desc;These Jewish Quarters are made of simple wooden structures and a definite upgrade to the tents.;;;;;;;;;;;;;x
+tm_jq_3;Temple Jewish Quarters Level 3;;;;;;;;;;;;;x
+tm_jq_3_desc;These Jewish Quarters are a combination of wooden and stone structures.;;;;;;;;;;;;;x
+tm_jq_4;Temple Jewish Quarters Level 4;;;;;;;;;;;;;x
+tm_jq_4_desc;The temple's Jewish Quarters have all been upgraded to stone structures.;;;;;;;;;;;;;x
+tm_ts_1;Temple Talmudic School Level 1;;;;;;;;;;;;;x
+tm_ts_1_desc;The Talmudic School is based out of simple tents.;;;;;;;;;;;;;x
+tm_ts_2;Temple Talmudic School Level 2;;;;;;;;;;;;;x
+tm_ts_2_desc;The Talmudic School now resides inside of a simple wooden building on the temple grounds.;;;;;;;;;;;;;x
+tm_ts_3;Temple Talmudic School Level 3;;;;;;;;;;;;;x
+tm_ts_3_desc;The Talmudic School now resides inside of a simple stone building on the temple grounds.;;;;;;;;;;;;;x
+tm_ts_4;Temple Talmudic School;;;;;;;;;;;;;x
+tm_ts_4_desc;The Talmudic School now resides inside of a ornate stone building on the temple grounds.;;;;;;;;;;;;;x
+tm_ks_1;Temple Karaite Synagogue Level 1;;;;;;;;;;;;;x
+tm_ks_1_desc;There is a Karaite Synagogue that is a simple tent structure near the main chapel.;;;;;;;;;;;;;x
+tm_ks_2; Temple Karaite Synagogue Level 2;;;;;;;;;;;;;x
+tm_ks_2_desc;There is a Karaite Synagogue that is a simple wooden structure near the main chapel.;;;;;;;;;;;;;x
+tm_ks_3;Temple Karaite Synagogue Level 3;;;;;;;;;;;;;x
+tm_ks_3_desc;There is a Karaite Synagogue that is a simple stone structure near the main chapel.;;;;;;;;;;;;;x
+tm_ks_4;Temple Karaite Synagogue Level 4;;;;;;;;;;;;;x
+tm_ks_4_desc;There is a Karaite Synagogue that is an ornate stone structure near the main chapel.;;;;;;;;;;;;;x
+tt_tg_1;Third Temple Walls and Gates Level 1;;;;;;;;;;;;;x
+tt_tg_1_desc;The Temple walls and gates are simple wooden affairs lacking any ornate details.;;;;;;;;;;;;;x
+tt_tg_2;Third Temple Wall and Gates Level 2;;;;;;;;;;;;;x
+tt_tg_2_desc;The Temple walls and gates are a combination of wood and stone.;;;;;;;;;;;;;x
+tt_tg_3;Third Temple Walls and Gates Level 3;;;;;;;;;;;;;x
+tt_tg_3_desc;The Temple walls and gates are made out of cut stone.;;;;;;;;;;;;;x
+tt_tg_4;Third Temple Walls and Gates Level 4;;;;;;;;;;;;;x
+tt_tg_4_desc;The Temple walls and gates are ornately decorated with statues and banners honoring Yahweh.;;;;;;;;;;;;;x
+tt_tm_1;Third Temple Mikveh Level 1;;;;;;;;;;;;;x
+tt_tm_1_desc;The mikveh is a simple design that only accommodates a few people at a time.;;;;;;;;;;;;;x
+tt_tm_2;Third Temple Mikveh Level 2;;;;;;;;;;;;;x
+tt_tm_2_desc;The mikveh is a more advanced design that can accommodate a few dozen people at a time.;;;;;;;;;;;;;x
+tt_tm_3;Third Temple Mikveh Level 3;;;;;;;;;;;;;x
+tt_tm_3_desc;The mikveh has some ornate features to adorn it's rich marble surfaces and can accommodate a few hundred people at a time.;;;;;;;;;;;;;x
+tt_tm_4;Third Temple Mikveh Level 4;;;;;;;;;;;;;x
+tt_tm_4_desc;The Temple mikveh is ornately decorated and is surrounded by numerous statues and banners honoring Adonai.;;;;;;;;;;;;;x
+tt_cg_1;Court of the Gentiles Level 1;;;;;;;;;;;;;x
+tt_cg_1_desc;The Court of the Gentiles is a simple one story wooden structure that encloses the plaza containing the Temple Mikveh.;;;;;;;;;;;;;x
+tt_cg_2;Court of the Gentiles Level 2;;;;;;;;;;;;;x
+tt_cg_2_desc;The Court of the Gentiles is now made of stone and is two stories in height. A balcony overlooks the plaza below.;;;;;;;;;;;;;x
+tt_cg_3;Court of the Gentiles Level 3;;;;;;;;;;;;;x
+tt_cg_3_desc;The Court of the Gentiles has some ornamental decorations and has increased to three stories tall. It provides an excellent view of the plaza below from its third story balcony.;;;;;;;;;;;;;x
+tt_cg_4;Court of the Gentiles Level 4;;;;;;;;;;;;;x
+tt_cg_4_desc;The Court of the Gentiles is very ornately decorated with statues and banners proclaiming the glory of Elohim as it towers over the plaza at a height of 4 stories.;;;;;;;;;;;;;x
+tt_ts_1;Temple Synagogue Level 1;;;;;;;;;;;;;x
+tt_ts_1_desc;Inside of the Court of the Gentiles resides the location of the Temple synagogue. It is a fairly bare affair and has the basic furniture.
+tt_ts_2;Temple Synagogue Level 2;;;;;;;;;;;;;x
+tt_ts_2_desc;The synagogue now contains better furniture and has some decorations.;;;;;;;;;;;;;x
+tt_ts_3;Temple Synagogue Level 3;;;;;;;;;;;;;x
+tt_ts_3_desc;The synagogue has the best furniture and more decorations. Work has begun on making a four story tall vaulted ceiling.;;;;;;;;;;;;;x
+tt_ts_4;Temple Synagogue Level 4;;;;;;;;;;;;;x
+tt_ts_4_desc;The synagogue is now complete. It is very ornately decorated with a four story tall vaulted ceiling that is painted with psalms of praise.;;;;;;;;;;;;;x
+tt_cw_1;Court of the Women Level 1;;;;;;;;;;;;;x
+tt_cw_1_desc;The Court of the Women is a simple wooden structure that is one story tall that encloses a second plaza.;;;;;;;;;;;;;x
+tt_cw_2;Court of the Women Level 2;;;;;;;;;;;;;x
+tt_cw_2_desc;The Court of the Women is now made of stone and is two stories in height. A balcony overlooks the plaza below.;;;;;;;;;;;;;x
+tt_cw_3;Court of the Women Level 3;;;;;;;;;;;;;x
+tt_cw_3_desc;The Court of the Women has some ornamental decorations and has increased to three stories tall. It provides an excellent view of the plaza below from its third story balcony.;;;;;;;;;;;;;x
+tt_cw_4;Court of the Women Level 4;;;;;;;;;;;;;x
+tt_cw_4_desc;Court of the Women is very ornately decorated with statues and banners proclaiming the glory of Elohim as it towers over the plaza at a height of 4 stories.;;;;;;;;;;;;;x
+tt_ci_1;Court of the Israelites Level 1;;;;;;;;;;;;;x
+tt_ci_1_desc;The Court of the Israelites is a simple wooden structure that is one story tall that encloses a third plaza.;;;;;;;;;;;;;x
+tt_ci_2;Court of the Israelites Level 2;;;;;;;;;;;;;x
+tt_ci_2_desc;The Court of the Israelites is now made of stone and is two stories in height. A balcony overlooks the plaza below.;;;;;;;;;;;;;x
+tt_ci_3;Court of the Israelites Level 3;;;;;;;;;;;;;x
+tt_ci_3_desc;The Court of the Israelites has some ornamental decorations and has increased to three stories tall. It provides an excellent view of the plaza below from its third story balcony.;;;;;;;;;;;;;x
+tt_ci_4;Court of the Israelites Level 4;;;;;;;;;;;;;x
+tt_ci_4_desc;The Court of the Israelites is very ornately decorated with statues and banners proclaiming the glory of Elohim as it towers over the plaza at a height of 4 stories.;;;;;;;;;;;;;x
+tt_ta_1;Temple Alter Level 1;;;;;;;;;;;;;x
+tt_ta_1_desc;The Third Temple Alter is a simple stone fixture.;;;;;;;;;;;;;x
+tt_ta_2;Temple Alter Level 2;;;;;;;;;;;;;x
+tt_ta_2_desc;Construction has begun to make the alter into the specifics recorded in the Tanakh and historical records.;;;;;;;;;;;;;x
+tt_ta_3;Temple Alter Level 3;;;;;;;;;;;;;x
+tt_ta_3_desc;Construction continues and the alter has some very ornamental features.;;;;;;;;;;;;;x
+tt_ta_4;Temple Alter Level 4;;;;;;;;;;;;;x
+tt_ta_4_desc;The construction of the alter is now complete. It is a wonder to behold and celebrates the power of Yahweh.;;;;;;;;;;;;;x
+tt_ic_1;Third Temple Inner Court Level 1;;;;;;;;;;;;;x
+tt_ic_1_desc;The Inner Court is a simple wooden structure that is one story tall and encloses a plaza.;;;;;;;;;;;;;x
+tt_ic_2;Third Temple Inner Court Level 2;;;;;;;;;;;;;x
+tt_ic_2_desc;The Inner Court is now made of stone and is two stories in height. A balcony overlooks the plaza below.;;;;;;;;;;;;;x
+tt_ic_3;Third Temple Inner Court Level 3;;;;;;;;;;;;;x
+tt_ic_3_desc;The Inner Court has some ornamental decorations and has increased to three stories tall. It provides an excellent view of the plaza below from its third story balcony.;;;;;;;;;;;;;x
+tt_ic_4;Third Temple Inner Court Level 4;;;;;;;;;;;;;x
+tt_ic_4_desc;The Inner Court is very ornately decorated with statues and banners proclaiming the glory of Elohim as it towers over the plaza at a height of 4 stories.;;;;;;;;;;;;;x
+tt_tf_1;Temple Furnishings of the Inner Court Level 1;;;;;;;;;;;;;x
+tt_tf_1_desc;The furnishings of the Inner Court are rather bland and look temporary.;;;;;;;;;;;;;x
+tt_tf_2;Temple Furnishings of the Inner Court Level 2;;;;;;;;;;;;;x
+tt_tf_2_desc;The furnishings look to be of higher quality, but lacks any details.;;;;;;;;;;;;;x
+tt_tf_3;Temple Furnishings of the Inner Court Level 3;;;;;;;;;;;;;x
+tt_tf_3_desc;The furnishings now have some decorative designs and is of the highest quality.;;;;;;;;;;;;;x
+tt_tf_4;Temple Furnishings of the Inner Court Level 4;;;;;;;;;;;;;x
+tt_tf_4_desc;The furnishings have intricate designs carved into the wood and metals.;;;;;;;;;;;;;x
+tt_is_1;Third Temple Inner Sanctuary Level 1;;;;;;;;;;;;;x
+tt_is_1_desc;The Inner Sanctuary is a simple wooden one story structure.;;;;;;;;;;;;;x
+tt_is_2;Third Temple Inner Sanctuary Level 2;;;;;;;;;;;;;x
+tt_is_2_desc;The Inner Sanctuary is now made from stone and is two stories tall.;;;;;;;;;;;;;x
+tt_is_3;Third Temple Inner Sanctuary Level 3;;;;;;;;;;;;;x
+tt_is_3_desc;The Inner Sanctuary has replaced the simple stone with marble. It is three stories tall and contains minor decorative elements.;;;;;;;;;;;;;x
+tt_is_4;Third Temple Inner Sanctuary Level 4;;;;;;;;;;;;;x
+tt_is_4_desc;Ornate decorations and banners adorn the walls. The Inner Sanctuary stands at an impressive four stories tall and is a marvel of the world.;;;;;;;;;;;;;x
+tt_hh_1;Third Temple Holy of Holies Level 1;;;;;;;;;;;;;x
+tt_hh_1_desc;A simple tent covers the area of where the Holy of Holies once stood with an alter for the Ark of the Covenant to sit.;;;;;;;;;;;;;x
+tt_hh_2;Third Temple Holy of Holies Level 2;;;;;;;;;;;;;x
+tt_hh_2_desc;Cut marble stone forms a one story wall around the tent. This is to ensure that no one but the Kohen Gadol actually enters the Holy of Holies.;;;;;;;;;;;;;x
+tt_hh_3;Third Temple Holy of Holies Level 3;;;;;;;;;;;;;x
+tt_hh_3_desc;The wall is now two stories tall around the tent.;;;;;;;;;;;;;x
+tt_hh_4;Third Temple Holy of Holies Level 4;;;;;;;;;;;;;x
+tt_hh_4_desc;The completed four story structure is ornately decorated on the outside with banners dedicated to Yahweh. The tent is no longer standing with an alter standing in the center of the room for the Ark of the Covenant.;;;;;;;;;;;;;x
