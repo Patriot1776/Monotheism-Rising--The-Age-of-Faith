@@ -1,0 +1,3827 @@
+#######################################
+#
+# Catholic Schism Events
+#
+# Event ID ID SHS.101 - SHS.199 reserved
+#
+#######################################
+
+# Written by Hansol "LumberKing" Lee
+
+namespace = SHS
+
+### Mending the Great Schism
+
+# To Mend or Not to Mend
+narrative_event = {
+	id = SHS.101
+	title = EVTNAMESHS.101
+	desc = EVTDESCSHS.101
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.101
+
+		ai_chance = { factor = 50 }
+
+		wealth = 1000
+
+		religion = FROM
+
+		give_nickname = nick_the_heretic
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					#controls_religion = no
+				}
+				narrative_event = { id = SHS.102 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.101
+
+		ai_chance = { factor = 50 }
+
+		give_nickname = nick_the_schismatic
+
+		prestige = 500
+		piety = 100
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.102
+	title = EVTNAMESHS.101
+	desc = EVTDESCSHS.101
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		trigger = {
+			NOT = { has_landed_title = k_orthodox }
+		}
+
+		ai_chance = { factor = 25 }
+		religion = FROM
+
+
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		trigger = {
+			NOT = { has_landed_title = k_orthodox }
+		}
+
+		ai_chance = { factor = 75 }
+	}
+	option = { # Yes - Ecumenical Patriarch
+		name = EVTOPTCSHS.102
+		trigger = {
+			has_landed_title = k_orthodox
+		}
+
+		if = {
+			limit = { 
+				FROM = { religion = catholic }
+			}
+			set_parent_religion = { religion = orthodox parent = catholic }
+		}
+		if = {
+			limit = { 
+				FROM = { religion = fraticelli }
+			}
+			set_parent_religion = { religion = orthodox parent = fraticelli }			
+		}
+
+		set_global_flag = schism_mended
+		give_nickname = nick_the_heretic
+
+		ai_chance = { factor = 25 }
+		activate_title = { title = d_latin_constantinople status = yes }
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				k_orthodox = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			d_latin_constantinople = {
+				grant_title = ROOT
+			}
+			b_hagiasophia = {
+				grant_title = ROOT
+			}
+			set_defacto_liege = FROM	
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+		}
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No - Ecumenical Patriarch
+		name = EVTOPTDSHH.102
+		trigger = {
+			has_landed_title = k_orthodox
+		}
+
+		ai_chance = { factor = 50 }
+		has_landed_title = k_orthodox
+	}
+}
+
+### Enforcing the Council of Chalcedon
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.103
+	title = EVTNAMESHS.103
+	desc = EVTDESCSHS.103
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.102
+
+		ai_chance = { factor = 50 }
+
+		wealth = 500
+
+		religion = FROM
+
+		if = {
+			limit = { 
+				FROM = { religion = catholic }
+			}
+			set_parent_religion = { religion = miaphysite parent = catholic }
+		}
+		if = {
+			limit = { 
+				FROM = { religion = fraticelli }
+			}
+			set_parent_religion = { religion = miaphysite parent = fraticelli }			
+		}
+
+		set_global_flag = eutychian_mended
+		give_nickname = nick_the_heretic
+		activate_title = { title = d_latin_alexandria status = yes }
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_miaphysite = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			d_latin_alexandria = {
+				grant_title = ROOT
+			}
+			b_alexandria = {
+				grant_title = ROOT
+			}	
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = miaphysite
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.102 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.102
+
+		ai_chance = { factor = 50 }
+
+		give_nickname = nick_the_schismatic
+
+		prestige = 300
+		piety = 50
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.104
+	title = EVTNAMESHS.103
+	desc = EVTDESCSHS.103
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Enforcing the Council of Ephesus
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.105
+	title = EVTNAMESHS.105
+	desc = EVTDESCSHS.105
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.102
+
+		ai_chance = { factor = 50 }
+
+		wealth = 500
+
+		religion = FROM
+
+		if = {
+			limit = { 
+				FROM = { religion = catholic }
+			}
+			set_parent_religion = { religion = nestorian parent = catholic }
+		}
+		if = {
+			limit = { 
+				FROM = { religion = fraticelli }
+			}
+			set_parent_religion = { religion = nestorian parent = fraticelli }			
+		}
+
+		set_global_flag = nestorian_mended
+		give_nickname = nick_the_heretic
+		activate_title = { title = d_latin_antioch status = yes }
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_nestorian = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			d_latin_antioch = {
+				grant_title = ROOT
+			}
+			b_antioch = {
+				grant_title = ROOT
+			}	
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = nestorian
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.102 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.102
+
+		ai_chance = { factor = 50 }
+
+		give_nickname = nick_the_schismatic
+
+		prestige = 300
+		piety = 50
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.106
+	title = EVTNAMESHS.105
+	desc = EVTDESCSHS.105
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Maronite Events
+
+# Crusaders encounter the Maronites
+character_event = {
+	id = SHS.108
+	desc = EVTDESCSHS.108
+
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		ai = no
+		has_called_crusade = yes
+		NOT = { has_global_flag = maronites_discovered }
+		OR = {
+			any_war = {
+				using_cb = crusade
+				crusade_target = {
+					title = k_jerusalem
+				}
+			}
+			any_liege = {
+				religion = catholic
+				any_war = {
+					using_cb = crusade
+					crusade_target = {
+						title = k_jerusalem
+					}
+				}
+			}
+		}
+		religion = catholic
+		#trait = crusader
+		OR = {
+			location = {
+				county = {
+					de_jure_liege = d_tripoli
+				}
+			}
+			location = {
+				county = {
+					de_jure_liege = c_beirut
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTASHS.108
+		ai_chance = { factor = 50 }
+		set_character_flag = discovered_maronites
+		set_global_flag = maronites_discovered
+		prestige = -100
+		narrative_event = { id = SHS.109 }
+	}
+
+	option = {
+		name = EVTOPTBSHS.108
+		ai_chance = { factor = 50 }
+		set_character_flag = discovered_maronites
+		set_global_flag = maronites_discovered
+		piety = -25
+		narrative_event = { id = SHS.110 }
+	}
+}
+
+# Crusaders accept the Maronites as Catholics
+narrative_event = {
+	id = SHS.109
+	title = EVTNAMESHS.109
+	desc = EVTDESCSHS.109
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.109
+		trigger = {
+			has_character_flag = discovered_maronites
+		}
+		hidden_tooltip = {
+			any_independent_ruler = {
+				limit = {
+					has_landed_title = d_monothelite
+				}
+			narrative_event = { id = SHS.111 tooltip = EVTTOOLTIPSHS.111 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.109
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTCSHS.109
+		trigger = {
+			religion = monothelite
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPDSHS.109
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPESHS.109
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+}
+
+# Crusaders decides Maronites are heretics
+narrative_event = {
+	id = SHS.110
+	title = EVTNAMESHS.109
+	desc = EVTDESCSHS.110
+	major = yes
+	
+	days = 7
+	random = 3
+
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.109
+		trigger = {
+			has_character_flag = discovered_maronites
+		}
+		hidden_tooltip = {
+			any_independent_ruler = {
+				limit = {
+					has_landed_title = d_monothelite
+				}
+			narrative_event = { id = SHS.112 tooltip = EVTTOOLTIPSHS.112 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.110
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTCSHS.110
+		trigger = {
+			religion = monothelite
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.110
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.109
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+}
+
+# Maronite Patriarchate is Established
+narrative_event = {
+	id = SHS.111
+	title = EVTNAMESHS.111
+	desc = EVTDESCSHS.111
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		trigger = {
+			has_landed_title = d_monothelite
+		}
+		set_global_flag = maronite_patriarchate_established
+		culture = levantine_arabic
+		religion = FROM
+		activate_title = { title = d_maronite status = yes }
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_monothelite = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			d_maronite = {
+				grant_title = ROOT
+				holder_scope = {
+					k_papal_state = {
+						holder_scope = {
+							set_defacto_vassal = PREVPREV
+						}
+					}
+				}
+			}
+			b_boutron = {
+				grant_title = ROOT
+			}
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = yes
+				}
+				narrative_event = { id = SHS.113 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTASHS.109
+		trigger = {
+			religion = catholic
+		}
+	}
+	option = {
+		name = EVTOPTCSHS.111
+		trigger = {
+			religion = monothelite
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.111
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.111
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+# Maronites are Insulted
+narrative_event = {
+	id = SHS.112
+	title = EVTNAMESHS.112
+	desc = EVTDESCSHS.112
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		trigger = {
+			has_landed_title = d_monothelite
+		}
+		activate_title = { title = d_saint_maron status = yes }
+		hidden_tooltip = {
+			create_random_soldier = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_saint_maron = {
+					grant_title = PREV
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = yes
+				}
+				narrative_event = { id = SHS.114 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.112
+		trigger = {
+			religion = catholic
+		}
+	}
+	option = {
+		name = EVTOPTCSHS.112
+		trigger = {
+			religion = monothelite
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.112
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.112
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+# Maronites joins the Catholic Church
+narrative_event = {
+	id = SHS.113
+	title = EVTNAMESHS.113
+	desc = EVTDESCSHS.113
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		trigger = {
+			religion = monothelite
+		}
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		trigger = {
+			religion = monothelite
+		}
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = EVTOPTASHS.109
+		piety = 150
+		add_claim = k_jerusalem
+		trigger = {
+			has_character_flag = discovered_maronites
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.113
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.113
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTFSHS.113
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+}
+
+# Pope condemns the Maronites
+narrative_event = {
+	id = SHS.114
+	title = EVTNAMESHS.114
+	desc = EVTDESCSHS.114
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_crusaders
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		trigger = {
+			religion = monothelite
+		}
+		ai_chance = { factor = 25 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		trigger = {
+			religion = monothelite
+		}
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = EVTOPTASHS.109
+		wealth = 700
+		prestige = 300
+		trigger = {
+			has_character_flag = discovered_maronites
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.114
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.114
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = monothelite }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.109
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { has_character_flag = discovered_maronites }
+		}
+	}
+}
+
+### Papal Schism
+
+# Antipope exists
+character_event = {
+	id = SHS.115
+	desc = OK
+
+	picture = GFX_evt_pope
+	border = GFX_event_narrative_frame_religion
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		year = 1350
+		NOT = { has_global_flag = papal_schism }
+		religion_head = {
+			has_claim = k_papal_state
+			NOT = { completely_controls = c_roma }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		set_character_flag = avignon_pope
+		set_global_flag = papal_schism
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = yes
+				}
+				narrative_event = { id = SHS.117 }
+			}
+		}
+	}
+}
+
+# Antipope doesn't exist (set up Antipope)
+character_event = {
+	id = SHS.116
+	desc = OK
+
+	picture = GFX_evt_pope
+	border = GFX_event_narrative_frame_religion
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		year = 1350
+		NOT = { has_global_flag = papal_schism }
+		any_realm_character = {
+			NOT = { has_claim = k_papal_state }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 10
+			has_landed_title = b_avignon
+		}
+	}
+
+	option = {
+		name = OK
+		random_realm_character = {
+			add_claim = k_papal_state
+		}
+		set_character_flag = avignon_pope
+		set_global_flag = papal_schism
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = yes
+				}
+				narrative_event = { id = SHS.117 }
+			}
+		}
+	}
+}
+
+# The Curia splits
+narrative_event = {
+	id = SHS.117
+	title = EVTNAMESHS.117
+	desc = EVTDESCSHS.117
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.117
+		trigger = {
+			has_landed_title = k_papal_state
+		}
+		prestige = -500
+		narrative_event = { id = SHS.118 }
+	}
+	option = {
+		name = EVTOPTBSHS.117
+		trigger = {
+			has_character_flag = avignon_pope
+		}
+		piety = -350
+	}
+	option = {
+		name = EVTOPTCSHS.117
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = avignon_pope }
+		}
+		religion_authority = -30
+	}
+	option = {
+		name = EVTOPTDSHS.117
+		trigger = {
+			religion = orthodox
+		}
+	}
+	option = {
+		name = EVTOPTESHS.117
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = orthodox }
+		}
+	}
+	option = {
+		name = EVTOPTFSHS.117
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+# The Pope and the Curia sends compromise to the Antipope
+narrative_event = {
+	id = SHS.118
+	title = EVTNAMESHS.118
+	desc = EVTDESCSHS.118
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.118
+		trigger = {
+			has_landed_title = k_papal_state
+		}
+		any_playable_ruler = {
+			limit = {
+				has_character_flag = avignon_pope
+			}
+			character_event = { id = SHS.119 }
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.118
+		trigger = {
+			religion = catholic
+		}
+	}
+	option = {
+		name = EVTOPTCSHS.118
+		trigger = {
+			religion = orthodox
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.118
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = orthodox }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.118
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+# Antipope decides on compromise
+character_event = {
+	id = SHS.119
+	desc = OK
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.119
+		trigger = {
+			has_character_flag = avignon_pope
+		}
+		ai_chance = { factor = 15 }
+		narrative_event = { id = SHS.120 }
+	}
+	option = {
+		name = EVTOPTBSHS.119
+		trigger = {
+			has_character_flag = avignon_pope
+		}
+		ai_chance = { factor = 85 }
+		narrative_event = { id = SHS.121 }
+	}
+}
+
+# Antipope agrees on compromise
+narrative_event = {
+	id = SHS.120
+	title = EVTNAMESHS.120
+	desc = EVTDESCSHS.120
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.120
+		trigger = {
+			has_landed_title = k_papal_state
+		}
+		abdicate = yes
+		remove_claim = k_papal_state
+	}
+	option = {
+		name = EVTOPTBSHS.120
+		trigger = {
+			has_character_flag = avignon_pope
+		}
+		remove_claim = k_papal_state
+	}
+	option = {
+		name = EVTOPTCSHS.120
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = avignon_pope }
+		}
+		religion_authority = 15
+	}
+	option = {
+		name = EVTOPTDSHS.120
+		trigger = {
+			religion = orthodox
+		}
+	}
+	option = {
+		name = EVTOPTESHS.120
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = orthodox }
+		}
+	}
+	option = {
+		name = EVTOPTFSHS.120
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+# Antipope disagrees on compromise
+narrative_event = {
+	id = SHS.121
+	title = EVTNAMESHS.121
+	desc = EVTDESCSHS.121
+	major = yes
+
+	days = 7
+	random = 3
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 10
+			has_landed_title = b_canefro
+		}
+	}
+
+	option = {
+		name = OK
+		random_realm_character = {
+			add_claim = k_papal_state
+		}
+		set_character_flag = pisan_pope
+	}
+	option = {
+		name = EVTOPTBSHS.121
+		trigger = {
+			religion = catholic
+			NOT = { has_character_flag = avignon_pope }
+			NOT = { has_character_flag = pisan_pope }
+		}
+		religion_authority = -30
+	}
+	option = {
+		name = EVTOPTCSHS.121
+		trigger = {
+			religion = orthodox
+		}
+	}
+	option = {
+		name = EVTOPTDSHS.121
+		trigger = {
+			religion_group = christian
+			NOT = { religion = catholic }
+			NOT = { religion = orthodox }
+		}
+	}
+	option = {
+		name = EVTOPTESHS.121
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+}
+
+### The Unification of Islam
+
+# Islam Unified
+narrative_event = {
+	id = SHS.501
+	title = EVTNAMESHS.501
+	desc = EVTDESCSHS.501
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPASHS.501
+
+		religion = FROM
+
+		if = {
+			limit = { religion = sunni }
+			set_parent_religion = { religion = shiite parent = sunni }
+			set_parent_religion = { religion = hurufi parent = sunni }
+			set_parent_religion = { religion = ibadi parent = sunni }
+			set_parent_religion = { religion = sufi parent = sunni }
+		}
+		if = {
+			limit = { religion = yazidi }
+			set_parent_religion = { religion = shiite parent = yazidi }
+			set_parent_religion = { religion = hurufi parent = yazidi }
+			set_parent_religion = { religion = ibadi parent = yazidi }
+			set_parent_religion = { religion = sufi parent = yazidi }
+		}
+		if = {
+			limit = { religion = shiite }
+			set_parent_religion = { religion = sunni parent = shiite }
+			set_parent_religion = { religion = yazidi parent = shiite }
+			set_parent_religion = { religion = ibadi parent = shiite }
+			set_parent_religion = { religion = sufi parent = shiite }
+		}
+		if = {
+			limit = { religion = hurufi }
+			set_parent_religion = { religion = sunni parent = hurufi }
+			set_parent_religion = { religion = yazidi parent = hurufi }
+			set_parent_religion = { religion = ibadi parent = hurufi }
+			set_parent_religion = { religion = sufi parent = hurufi }
+		}
+		if = {
+			limit = { religion = ibadi }
+			set_parent_religion = { religion = sunni parent = ibadi }
+			set_parent_religion = { religion = yazidi parent = ibadi }
+			set_parent_religion = { religion = shiite parent = ibadi }
+			set_parent_religion = { religion = hurufi parent = ibadi }
+			set_parent_religion = { religion = sufi parent = ibadi }
+		}
+		if = {
+			limit = { religion = kharijite }
+			set_parent_religion = { religion = sunni parent = kharijite }
+			set_parent_religion = { religion = yazidi parent = kharijite }
+			set_parent_religion = { religion = shiite parent = kharijite }
+			set_parent_religion = { religion = hurufi parent = kharijite }
+			set_parent_religion = { religion = sufi parent = kharijite }
+		}
+		if = {
+			limit = { religion = sufi }
+			set_parent_religion = { religion = sunni parent = sufi }
+			set_parent_religion = { religion = yazidi parent = sufi }
+			set_parent_religion = { religion = shiite parent = sufi }
+			set_parent_religion = { religion = hurufi parent = sufi }
+			set_parent_religion = { religion = ibadi parent = sufii }
+		}
+
+		set_global_flag = islam_united
+		give_nickname = nick_the_saint
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.502
+	title = EVTNAMESHS.501
+	desc = EVTDESCSHS.501
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+# Birth of the Chisti Order
+narrative_event = {
+	id = SHS.503
+	title = EVTTITLESHS.503
+	desc = EVTDESCSHS.503
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_chisti
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 930	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_chisti status = yes }
+		create_character = {
+			random_traits = no
+			name = Ishaq
+			dynasty = random
+			religion = ROOT
+			culture = levantine_arabic
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_chisti = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = levantine_arabic
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Mevlevi Order
+narrative_event = {
+	id = SHS.504
+	title = EVTTITLESHS.504
+	desc = EVTDESCSHS.504
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_mevlevi
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 1273	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_mevlevi status = yes }
+		create_character = {
+			random_traits = no
+			name = Hüsamettin
+			dynasty = random
+			religion = ROOT
+			culture = persian
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_mevlevi = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Naqshbandi Order
+narrative_event = {
+	id = SHS.505
+	title = EVTTITLESHS.505
+	desc = EVTDESCSHS.505
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_naqshbandi
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 1380	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_naqshbandi status = yes }
+		create_character = {
+			random_traits = no
+			name = Naqshband
+			dynasty = random
+			religion = ROOT
+			culture = persian
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_naqshbandi = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Uwaisi Order
+narrative_event = {
+	id = SHS.506
+	title = EVTTITLESHS.506
+	desc = EVTDESCSHS.506
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_uwaisi
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 600	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_uwaisi status = yes }
+		create_character = {
+			random_traits = no
+			name = Uwais
+			dynasty = random
+			religion = ROOT
+			culture = bedouin_arabic
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_uwaisi = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = bedouin_arabic
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Qadiri Order
+narrative_event = {
+	id = SHS.507
+	title = EVTTITLESHS.507
+	desc = EVTDESCSHS.507
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_qadiri
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 1119	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_qadiri status = yes }
+		create_character = {
+			random_traits = no
+			name = Abdul-Qadir
+			dynasty = random
+			religion = ROOT
+			culture = kurdish
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_qadiri = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = kurdish
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Suhrawardi Order
+narrative_event = {
+	id = SHS.508
+	title = EVTTITLESHS.508
+	desc = EVTDESCSHS.508
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_suhrawardi
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 1120	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_suhrawardi status = yes }
+		create_character = {
+			random_traits = no
+			name = Abu
+			dynasty = random
+			religion = ROOT
+			culture = persian
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_suhrawardi = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = persian
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}
+
+# Birth of the Shadhili Order
+narrative_event = {
+	id = SHS.509
+	title = EVTTITLESHS.509
+	desc = EVTDESCSHS.509
+	picture = GFX_evt_moors
+	
+	major = yes
+	hide_from = yes
+	
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+		has_dlc = "Sons of Abraham"
+		religion = sufi
+		is_heretic = no
+		NOT = {
+			is_title_active = d_shadhili
+		}
+		
+		has_global_flag = muslim_jihads_unlocked
+		
+		year = 1166	# Historical
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		activate_title = { title = d_shadhili status = yes }
+		create_character = {
+			random_traits = no
+			name = Abu-l-Hassan
+			dynasty = random
+			religion = ROOT
+			culture = maghreb_arabic
+			female = no
+			age = 25
+			attributes = {
+				martial = 10
+				diplomacy = 9
+				stewardship = 9
+				intrigue = 7
+				learning = 9
+			}
+			health = 6
+			fertility = 0.5
+			trait = brilliant_strategist
+			trait = sayyid
+			trait = hajjaj
+			trait = hafiz
+			trait = patient
+			trait = zealous
+			trait = scholar
+			trait = temperate
+		}
+		new_character = {
+			wealth = 500
+			d_shadhili = {
+				grant_title = PREV
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = maghreb_arabic
+				female = yes
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1209
+		trigger = {
+			religion = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTB_SOA_1209
+		trigger = {
+			NOT = { religion = ROOT }
+		}
+	}
+}### The Petrine Sees
+
+# Patriarchate of Antioch
+character_event = {
+	id = SHS.307
+	desc = EVTDESCSHS.307
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_antioch_mia }
+		religion = miaphysite
+
+		completely_controls = c_antiocheia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = pat_antioch_mia
+		piety = 150
+	}
+}
+
+# Papacy of Alexandria
+character_event = {
+	id = SHS.308
+	desc = EVTDESCSHS.308
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pap_alexandria_mia }
+		religion = miaphysite
+
+		completely_controls = c_alexandria
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = pap_alexandria_mia
+		piety = 200
+	}
+}
+
+# Papacy of Rome
+character_event = {
+	id = SHS.309
+	desc = EVTDESCSHS.309
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pap_rome_mia }
+		religion = miaphysite
+
+		completely_controls = c_roma
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = pap_rome_mia
+		piety = 150
+	}
+}
+
+### Repudating the Council of Chalcedon (Catholic)
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.301
+	title = EVTNAMESHS.301
+	desc = EVTDESCSHS.301
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = miaphysite }
+			set_parent_religion = { religion = catholic parent = miaphysite }
+		}
+		if = {
+			limit = { religion = monophysite }
+			set_parent_religion = { religion = catholic parent = miaphysite }
+		}
+
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.302 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.302
+	title = EVTNAMESHS.302
+	desc = EVTDESCSHS.302
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Repudating the Council of Chalcedon (Orthodox)
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.303
+	title = EVTNAMESHS.303
+	desc = EVTDESCSHS.303
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = miaphysite }
+			set_parent_religion = { religion = orthodox parent = miaphysite }
+		}
+		if = {
+			limit = { religion = monophysite }
+			set_parent_religion = { religion = orthodox parent = monophysite }
+		}
+
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.304 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.304
+	title = EVTNAMESHS.304
+	desc = EVTDESCSHS.304
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Enforcing the Council of Ephesus
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.305
+	title = EVTNAMESHS.305
+	desc = EVTDESCSHS.305
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = miaphysite }
+			set_parent_religion = { religion = nestorian parent = miaphysite }
+		}
+		if = {
+			limit = { religion = monophysite }
+			set_parent_religion = { religion = nestorian parent = miaphysite }
+		}
+
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = nestorian
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.306 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.306
+	title = EVTNAMESHS.306
+	desc = EVTDESCSHS.306
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+### The Apostolic Sees
+
+# Bishopric of Antioch
+character_event = {
+	id = SHS.407
+	desc = EVTDESCSHS.407
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = bis_antioch_nes }
+		religion = nestorian
+
+		completely_controls = c_antiocheia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = bis_antioch_nes
+		piety = 150
+	}
+}
+
+# Bishopric of Jerusalem
+character_event = {
+	id = SHS.408
+	desc = EVTDESCSHS.408
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = bis_jerusalem_nes }
+		religion = nestorian
+
+		completely_controls = c_jerusalem
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = bis_jerusalem_nes
+		piety = 100
+	}
+}
+
+# Archbishopric of Alexandria
+character_event = {
+	id = SHS.409
+	desc = EVTDESCSHS.409
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = arc_alexandria_nes }
+		religion = nestorian
+
+		completely_controls = c_alexandria
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = arc_alexandria_nes
+		piety = 100
+	}
+}
+
+# Bishopric of Rome
+character_event = {
+	id = SHN.010
+	desc = EVTDESCSHN.010
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = bis_rome_nes }
+		religion = nestorian
+
+		completely_controls = c_roma
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = bis_rome_nes
+		piety = 100
+	}
+}
+
+# Archbishopric of Constantinople
+character_event = {
+	id = SHN.011
+	desc = EVTDESCSHN.011
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = arc_constantinople_nes }
+		religion = nestorian
+
+		completely_controls = c_byzantion
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = arc_constantinople_nes
+		piety = 50
+	}
+}
+
+# Bishopric of Aquileia
+character_event = {
+	id = SHN.012
+	desc = EVTDESCSHN.012
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = bis_aquileia_nes }
+		religion = nestorian
+
+		completely_controls = c_aquileia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = bis_aquileia_nes
+		piety = 50
+	}
+}
+
+# Archbishopric of Seleucia-Ctesiphon
+character_event = {
+	id = SHN.012
+	desc = EVTDESCSHN.013
+	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = arc_baghdad_nes }
+		religion = nestorian
+
+		completely_controls = c_baghdad
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = arc_baghdad_nes
+		piety = 250
+	}
+}
+
+### Repudating the Council of Chalcedon (Catholic)
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.401
+	title = EVTNAMESHS.401
+	desc = EVTDESCSHS.401
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = nestorian }
+			set_parent_religion = { religion = catholic parent = nestorian }
+		}
+		if = {
+			limit = { religion = eutychian }
+			set_parent_religion = { religion = catholic parent = eutychian }
+		}
+
+		set_global_flag = nestorian_mended
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = catholic
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.402 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.402
+	title = EVTNAMESHS.402
+	desc = EVTDESCSHS.402
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Repudating the Council of Chalcedon (Orthodox)
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.403
+	title = EVTNAMESHS.403
+	desc = EVTDESCSHS.403
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = nestorian }
+			set_parent_religion = { religion = orthodox parent = nestorian }
+		}
+		if = {
+			limit = { religion = eutychian }
+			set_parent_religion = { religion = orthodox parent = eutychian }
+		}
+
+		set_global_flag = imperial_mended
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.404 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.404
+	title = EVTNAMESHS.404
+	desc = EVTDESCSHS.404
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTASHS.404
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBSHS.404
+		ai_chance = { factor = 25 }
+	}
+}
+
+### Repudating the Council of Ephesus
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.405
+	title = EVTNAMESHS.405
+	desc = EVTDESCSHS.405
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+
+		if = {
+			limit = { religion = nestorian }
+			set_parent_religion = { religion = miaphysite parent = nestorian }
+		}
+		if = {
+			limit = { religion = eutychean }
+			set_parent_religion = { religion = miaphysite parent = eutychean }
+		}
+
+		set_global_flag = schism_mended
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = miaphysite
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.406 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.406
+	title = EVTNAMESHS.406
+	desc = EVTDESCSHS.406
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+narrative_event = {
+	id = SHS.201
+	title = EVTNAMESHS.201
+	desc = EVTDESCSHS.201
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.201
+
+		ai_chance = { factor = 50 }
+
+		wealth = 500
+
+		religion = FROM
+
+		if = {
+			limit = { religion = orthodox }
+			set_parent_religion = { religion = miaphysite parent = orthodox }
+		}
+		if = {
+			limit = { religion = monothelite }
+			set_parent_religion = { religion = miaphysite parent = monothelite }
+		}
+		if = {
+			limit = { religion = iconoclast }
+			set_parent_religion = { religion = miaphysite parent = iconoclast }
+		}
+
+		set_global_flag = chalcedon_mended
+		give_nickname = nick_the_heretic
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_miaphysite = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			b_alexandria = {
+				grant_title = ROOT
+			}	
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = miaphysite
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.202 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.201
+
+		ai_chance = { factor = 50 }
+
+		give_nickname = nick_the_schismatic
+
+		prestige = 300
+		piety = 50
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.202
+	title = EVTNAMESHS.202
+	desc = EVTDESCSHS.202
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}
+
+### Enforcing the Council of Ephesus
+
+# The Schism Mended
+narrative_event = {
+	id = SHS.203
+	title = EVTNAMESHS.203
+	desc = EVTDESCSHS.203
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASHS.201
+
+		ai_chance = { factor = 50 }
+
+		wealth = 500
+
+		religion = FROM
+
+		if = {
+			limit = { religion = orthodox }
+			set_parent_religion = { religion = nestorian parent = orthodox }
+		}
+		if = {
+			limit = { religion = monothelite }
+			set_parent_religion = { religion = nestorian parent = monothelite }
+		}
+		if = {
+			limit = { religion = iconoclast }
+			set_parent_religion = { religion = nestorian parent = iconoclast }
+		}
+
+		set_global_flag = nestorian_mended
+		give_nickname = nick_the_heretic
+		hidden_tooltip = {
+			create_random_priest = {
+				dynasty = none
+				random_traits = yes
+			}
+			new_character = {
+				d_nestorian = {
+					grant_title = PREV
+				}
+				wealth = 500
+			}
+			b_antiocheia = {
+				grant_title = ROOT
+			}	
+			religion_authority = {
+				modifier = patriarchy_instituted
+				years = 20
+			}
+			any_playable_ruler = {
+				limit = {
+					religion = nestorian
+					controls_religion = no
+				}
+				narrative_event = { id = SHS.204 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBSHS.201
+
+		ai_chance = { factor = 50 }
+
+		give_nickname = nick_the_schismatic
+
+		prestige = 300
+		piety = 50
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = SHS.204
+	title = EVTNAMESHS.204
+	desc = EVTDESCSHS.204
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 50 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 50 }
+	}
+}# Rome Re-Established
+character_event = { 
+	id = SHS.1
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = monothelite
+			religion = iconoclast
+			religion = miaphysite
+			religion = monophysite
+			religion = nestorian
+		}
+
+		is_theocracy = yes
+		NOT = { has_landed_title = d_pentarch_rome }
+		has_landed_title = b_roma
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_rome = {
+			grant_title = ROOT
+		}
+	}
+}
+
+# Rome De-Established
+character_event = {
+	id = SHS.2
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_pentarch_rome
+		OR = {
+			NOT = { has_landed_title = b_roma }
+			NOT = { is_theocracy = yes }
+			NOT = { 
+				OR = {
+					religion = orthodox
+					religion = monothelite
+					religion = iconoclast
+					religion = miaphysite
+					religion = monophysite
+					religion = nestorian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_rome = { destroy_landed_title = THIS }
+	}
+}
+
+
+## Patriarchate of Constantinople
+
+# Constantinople Re-Established
+character_event = { 
+	id = SHS.3
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = monothelite
+			religion = iconoclast
+		}
+
+		is_theocracy = yes
+		NOT = { has_landed_title = d_pentarch_constantinople }
+		has_landed_title = b_hagiasophia
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_constantinople = {
+			grant_title = ROOT
+		}
+	}
+}
+
+# Constantinople De-Established
+character_event = {
+	id = SHS.4
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_pentarch_constantinople
+		OR = {
+			NOT = { has_landed_title = b_hagiasophia }
+			NOT = { is_theocracy = yes }
+			NOT = { 
+				OR = {
+					religion = orthodox
+					religion = monothelite
+					religion = iconoclast
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_constantinople = { destroy_landed_title = THIS }
+	}
+}
+
+# Constantinople Reformed (Orthodox)
+character_event = {
+	id = SHS.5
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = k_orthodox
+		d_pentarch_constantinople = {
+			holder_scope = {
+				AND = {
+					religion = orthodox
+					NOT = { has_landed_title = k_orthodox }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_constantinople = { grant_title = ROOT }
+		b_hagiasophia = { grant_title = ROOT }
+	}
+}
+
+# Constantinople Reformed (Iconoclast)
+character_event = {
+	id = SHS.6
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_iconoclast
+		d_pentarch_constantinople = {
+			holder_scope = {
+				AND = {
+					religion = iconoclast
+					NOT = { has_landed_title = d_iconoclast }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_constantinople = { grant_title = ROOT }
+		b_hagiasophia = { grant_title = ROOT }
+	}
+}
+
+## Papacy of Alexandria
+
+# Alexandria Re-Established
+character_event = { 
+	id = SHS.7
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = monothelite
+			religion = iconoclast
+			religion = miaphysite
+			religion = monophysite
+			religion = nestorian
+		}
+
+		is_theocracy = yes
+		NOT = { has_landed_title = d_pentarch_alexandria }
+		has_landed_title = b_alexandria
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_alexandria = {
+			grant_title = ROOT
+		}
+	}
+}
+
+# Alexandria De-Established
+character_event = {
+	id = SHS.8
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_pentarch_alexandria
+		OR = {
+			NOT = { has_landed_title = b_alexandria }
+			NOT = { is_theocracy = yes }
+			NOT = { 
+				OR = {
+					religion = orthodox
+					religion = monothelite
+					religion = iconoclast
+					religion = miaphysite
+					religion = monophysite
+					religion = nestorian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_alexandria = { destroy_landed_title = THIS }
+	}
+}
+
+# Alexandria Reformed (Miaphysite)
+character_event = {
+	id = SHS.9
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_miaphysite
+		d_pentarch_alexandria = {
+			holder_scope = {
+				AND = {
+					religion = miaphysite
+					NOT = { has_landed_title = d_miaphysite }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_alexandria = { grant_title = ROOT }
+		b_alexandria = { grant_title = ROOT }
+	}
+}
+
+# Alexandria Reformed (Monophysite)
+character_event = {
+	id = SHS.10
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_monophysite
+		d_pentarch_alexandria = {
+			holder_scope = {
+				AND = {
+					religion = monophysite
+					NOT = { has_landed_title = d_monophysite }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_alexandria = { grant_title = ROOT }
+		b_alexandria = { grant_title = ROOT }
+	}
+}
+
+## Patriarchate of Antioch
+
+# Antioch Re-Established
+character_event = { 
+	id = SHS.11
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = monothelite
+			religion = iconoclast
+			religion = miaphysite
+			religion = monophysite
+			religion = nestorian
+		}
+
+		is_theocracy = yes
+		NOT = { has_landed_title = d_pentarch_antioch }
+		has_landed_title = b_antiocheia
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_antioch = {
+			grant_title = ROOT
+		}
+	}
+}
+
+# Antioch De-Established
+character_event = {
+	id = SHS.12
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_pentarch_antioch
+		OR = {
+			NOT = { has_landed_title = b_antiocheia }
+			NOT = { is_theocracy = yes }
+			NOT = { 
+				OR = {
+					religion = orthodox
+					religion = monothelite
+					religion = iconoclast
+					religion = miaphysite
+					religion = monophysite
+					religion = nestorian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_antioch = { destroy_landed_title = THIS }
+	}
+}
+
+# Antioch Reformed (Monothelite)
+character_event = {
+	id = SHS.13
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_monothelite
+		d_pentarch_antioch = {
+			holder_scope = {
+				AND = {
+					religion = monothelite
+					NOT = { has_landed_title = d_monothelite }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_antioch = { grant_title = ROOT }
+		b_antiocheia = { grant_title = ROOT }
+	}
+}
+
+## Antioch Reformed (Nestorian)
+#character_event = {
+#	id = SHS.14
+#	desc = OK
+#	picture = GFX_evt_bishop_byzantine
+#
+#	hide_window = yes
+#
+#	trigger = {
+#		has_landed_title = d_nestorian
+#		d_pentarch_antioch = {
+#			holder_scope = {
+#				AND = {
+#					religion = nestorian
+#					NOT = { has_landed_title = d_nestorian }
+#				}
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = OK
+#		d_pentarch_antioch = { grant_title = ROOT }
+#		b_antiocheia = { grant_title = ROOT }
+#	}
+#}
+
+
+## Patriarchate of Jerusalem
+
+# Jerusalem Re-Established
+character_event = { 
+	id = SHS.15
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = monothelite
+			religion = iconoclast
+		}
+
+		is_theocracy = yes
+		NOT = { has_landed_title = d_pentarch_jerusalem }
+		has_landed_title = b_jerusalem
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_jerusalem = {
+			grant_title = ROOT
+		}
+	}
+}
+
+# Jerusalem De-Established
+character_event = {
+	id = SHS.16
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = d_pentarch_jerusalem
+		OR = {
+			NOT = { has_landed_title = b_jerusalem }
+			NOT = { is_theocracy = yes }
+			NOT = { 
+				OR = {
+					religion = orthodox
+					religion = monothelite
+					religion = iconoclast
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		d_pentarch_jerusalem = { destroy_landed_title = THIS }
+	}
+}
+
+# Establishing Liege for the Pentarchs
+
+character_event = {
+	id = SHS.17
+	desc = OK
+	picture = GFX_evt_bishop_byzantine
+
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			has_landed_title = d_pentarch_rome
+			has_landed_title = d_pentarch_constantinople
+			has_landed_title = d_pentarch_alexandria
+			has_landed_title = d_pentarch_antioch
+			has_landed_title = d_pentarch_jerusalem	
+		}
+		independent = yes
+		NOT = {
+			num_of_count_titles = 1
+			num_of_king_titles = 1
+			num_of_emperor_titles = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = OK
+		capital_holding = {
+			dejure_liege_title = {
+				holder_scope = {
+					top_liege = {
+						set_defacto_vassal = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+

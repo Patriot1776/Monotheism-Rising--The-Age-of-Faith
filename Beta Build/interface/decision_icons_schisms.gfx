@@ -1,0 +1,7 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_mend_eastwest_schism"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_statusofwomen_decision_husband_switchdynasty"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_spouse_indian.dds"
+	}
+}
