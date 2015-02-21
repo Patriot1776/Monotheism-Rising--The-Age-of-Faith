@@ -63,11 +63,11 @@ christian = {
                 color = { 0.8 0.3 0.5 }
                 
                 crusade_name = CRUSADE
-		            parent = chalcedonian
+		parent = chalcedonian
 		
                 intermarry = mahayana_buddhist
                 intermarry = manichean
-		            intermarry = zoroastrian
+		intermarry = zoroastrian
                 
                 autocephaly = yes
                 can_excommunicate = yes
@@ -92,7 +92,7 @@ christian = {
                 color = { 0.25 0 0 }
                 
                 crusade_name = CRUSADE
-		            parent = chalcedonian
+		parent = chalcedonian
                 
                 autocephaly = yes
                 can_excommunicate = yes
