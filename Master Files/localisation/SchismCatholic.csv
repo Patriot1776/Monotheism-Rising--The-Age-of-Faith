@@ -1,0 +1,91 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+mend_great_schism_catholic;Request to Mend the Great Schism;;;;;;;;;;;;;x
+mend_great_schism_catholic_desc;The Great Schism saw the Christian Church divided into two branches, but if a council is successfully held with the Byzantine Emperor, there may be a chance to finally reunite Christendom.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.101;A Council is held to Mend the Great Schism.;;;;;;;;;;;;;x
+EVTNAMESHS.101;A Council to Mend the Great Schism;;;;;;;;;;;;;x
+EVTDESCSHS.101;Despite confessing what is essentially the same faith, the Western Catholic Church and the Eastern Orthodox Church has been at odds with each other since the Seven Ecumenical Councils. Now [From.GetTitledFirstName] called for a Council to heal this divide and re-unite Christendom, asking [Root.GetTitledFirstName] for [Root.GetHerHis] co-operation.\n\nThe conditions for re-union has been laid out by [From.GetTitledFirstName] and it is now up to [Root.GetTitledFirstName] and [Root.GetHerHis] bishops to decide whether this is acceptable or not. Of course, [Root.GetHerHis] subjects may reject the outcome of this council...;;;;;;;;;;;;;x
+EVTOPTASHS.101;We can repent later, give the Pope what he wants.;;;;;;;;;;;;;x
+EVTOPTBSHS.101;I will never stand for this heresy!;;;;;;;;;;;;;x
+EVTOPTCSHS.102;The Pope is the Universal Head of the Church.;;;;;;;;;;;;;x
+EVTOPTDSHS.102;The Pope is just First among Equals!;;;;;;;;;;;;;x
+enforce_chalcedon_catholic;Enforce the Council of Chalcedon;;;;;;;;;;;;;x
+enforce_chalcedon_catholic_desc;The Fourth Ecumenical Council saw the overturning of a previous synod headed by the heretic Eutyches resulting in the Christian Church being divided within Roman Empire, but if the significant episcopal sees of these schismatics could be restored to the Catholic faith, there may be a chance to heal this ancient schism.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.103;The Coptic Pope receives a letter.;;;;;;;;;;;;;x
+EVTNAMESHS.103;Review of the Council of Chalcedon;;;;;;;;;;;;;x
+EVTDESCSHS.103;The Council of Chalcedon, or the Fourth Ecumenical Council, saw the split between those who spoke either Greek or Latin and those who did not speak those languages. The former became known as the "Melkites" while the latter were accused of "Monophysitism". Despite several subsequent councils to reconcile the two, they all ended up with new heresies. Now [From.GetTitledFirstName] called for a review the Council of Chalcedon, asking [Root.GetTitledFirstName] to reconsider their Church's stance on the issue.\n\nThe conditions for communion has been laid out by [From.GetTitledFirstName] and it is now up to [Root.GetTitledFirstName] and [Root.GetHerHis] bishops to decide whether this is acceptable or not.;;;;;;;;;;;;;x
+enforce_ephesus_catholic;Enforce the Council of Ephesus;;;;;;;;;;;;;x
+enforce_ephesus_catholic_desc;The Third Ecumenical Council saw final condemnation of the heretic Nestorius. However, due to not being invited, the bishops outside the Roman Empire were not invited resulting in them siding with him, but if the significant episcopal sees of these schismatics could be restored to the Catholic faith, there may be a chance to bring back these Churches to the Mother Church.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.105;The Catholicos-Patriarch receives a letter.;;;;;;;;;;;;;x
+EVTNAMESHS.105;Review of the Council of Ephesus;;;;;;;;;;;;;x
+EVTDESCSHS.105;The Council of Ephesus, or the Third Ecumenical Council, saw the split between the Church in Rome and the Church in Persia. Though it was used as a political tool by then Sassanid King, the latter were accused of "Adoptionism" as well as the advent of Islam. Several issues resulted from this including the split within Rome a few decades later. Now [From.GetTitledFirstName] called for a review the Council of Ephesus, asking [Root.GetTitledFirstName] to reconsider their Church's stance on the issue.\n\nThe conditions for communion has been laid out by [From.GetTitledFirstName] and it is now up to [Root.GetTitledFirstName] and [Root.GetHerHis] bishops to decide whether this is acceptable or not.;;;;;;;;;;;;;x
+establish_latin_constantinople;Establish the Latin Patriarchate (Constantinople);;;;;;;;;;;;;x
+establish_latin_constantinople_desc;The See of Constantinople is under our control. If we can establish a rival office to the Ecumenical Patriarch, they may lose legitimacy.;;;;;;;;;;;;;x
+establish_latin_alexandria;Establish the Latin Patriarchate (Alexandria);;;;;;;;;;;;;x
+establish_latin_alexandria_desc;The See of Alexandria is under our control. If we can establish a rival office to that of the Coptic Pope, they may lose legitimacy.;;;;;;;;;;;;;x
+establish_latin_antioch;Establish the Latin Patriarchate (Antioch);;;;;;;;;;;;;x
+establish_latin_antioch_desc;The See of Antioch is under our control.;;;;;;;;;;;;;x
+establish_latin_jerusalem;Establish the Latin Patriarchate (Jerusalem);;;;;;;;;;;;;x
+establish_latin_jerusalem_desc;The See of Jerusalem is under our control.;;;;;;;;;;;;;x
+EVTDESCSHS.108;As you and your fellow Crusaders travel towards the Holy Land, you come across some Semitic people near Mount Lebanon. Upon further investigation, you learn that these people are Maronites, a community established by Saint Maron, thought to have been long extinct since the Monothelite controversy.\n\nThough they claim to have always been loyal to Rome, it has been centuries since they have had communication with the rest of Christendom.;;;;;;;;;;;;;x
+EVTOPTASHS.108;They are our long lost brothers.;;;;;;;;;;;;;x
+EVTOPTBSHS.108;They are heretics, establish the inquistion!;;;;;;;;;;;;;x
+EVTNAMESHS.109;Maronites Discovered;;;;;;;;;;;;;x
+EVTDESCSHS.109;It has been centuries since the Christian community established by Saint Maron last had contact outside of Mount Lebanon. By chance the Crusaders led by [From.GetTitledFirstName] had encountered while they were on their way to the Holy Lands.\n\nPrior to their hiding, these people were accused of Monothelite heresy as condemned by the Third Council of Constantinople. However, upon contact, the Crusaders embraced them with open arms as fellow brothers in faith.;;;;;;;;;;;;;x
+EVTOPTASHS.109;Deus Vult!;;;;;;;;;;;;;x
+EVTOPTBSHS.109;Let us rejoice!;;;;;;;;;;;;;x
+EVTOPTCSHS.109;Thank God for the Crusaders!;;;;;;;;;;;;;x
+EVTOPTDSHS.109;Embracing heretics? Typical.;;;;;;;;;;;;;x
+EVTOPTESHS.109;This is none of our concern.;;;;;;;;;;;;;x
+EVTDESCSHS.110;It has been centuries since the Christian community established by Saint Maron last had contact outside of Mount Lebanon. By chance the Crusaders led by [From.GetTitledFirstName] had encountered while they were on their way to the Holy Lands.\n\nPrior to their hiding, these people were accused of Monothelite heresy as condemned by the Third Council of Constantinople. Showing their zeal for orthodoxy, the Crusaders have decided to launch a full inquistion upon these people.;;;;;;;;;;;;;x
+EVTOPTBSHS.110;So more heretics to deal with?;;;;;;;;;;;;;x
+EVTOPTCSHS.110;Curse these Crusaders!;;;;;;;;;;;;;x
+EVTOPTDSHS.110;So Crusaders are useful for somethings.;;;;;;;;;;;;;x
+EVTNAMESHS.111;The New Patriarchate;;;;;;;;;;;;;x
+EVTDESCSHS.111;With communications re-established between the Maronites and the rest of Christendom thanks to the Crusaders, the Maronites have re-affirmed their affiliation with Church of Rome. To commemorate the occasion, [From.RelHead.GetBestName] sent their leader, [Root.GetFirstName] a crown and a staff, elevating [Root.GetHerHim] to that of a Patriarch of Antioch in Boutron.;;;;;;;;;;;;;x
+EVTOPTCSHS.111;God bless the Pope!;;;;;;;;;;;;;x
+EVTOPTDSHS.111;Curse these Papists!;;;;;;;;;;;;;x
+EVTOPTESHS.111;They're still just mountain people.;;;;;;;;;;;;;x
+EVTNAMESHS.112;Order of Saint Maron;;;;;;;;;;;;;x
+EVTDESCSHS.112;With the re-discovery of the Maronites which the Church of Rome was previously unaware of, the Crusaders had all the Maronites they have encountered detained under the suspicion of heresy. Having persecuted by the Byzantines and the Druze before, those who were able escape the Crusaders grasp were outraged at how they were treated\n\nWith no one else to turn to, the remnants of the Maronites have decided to fend for themselves by militarising their community and taking up arms.;;;;;;;;;;;;;x
+EVTOPTBSHS.112;How dare they!;;;;;;;;;;;;;x
+EVTOPTCSHS.112;We shall fend for ourselves!;;;;;;;;;;;;;x
+EVTOPTDSHS.112;Violence are the way of heretics.;;;;;;;;;;;;;x
+EVTOPTESHS.112;Oh dear...;;;;;;;;;;;;;x
+EVTNAMESHS.113;Maronite Catholics;;;;;;;;;;;;;x
+EVTDESCSHS.113;Now that communion had been re-affirmed between the Maronites and the See of Rome, the relationship further deepend with the confirmation of the Maronite Patriarchate, the Maronites flocked towards the banner of the Crusaders in retaking the Holy Lands in the name of Christ.;;;;;;;;;;;;;x
+EVTOPTDSHS.113;They are no longer lost!;;;;;;;;;;;;;x
+EVTOPTESHS.113;Bah! They're still heretics.;;;;;;;;;;;;;x
+EVTOPTFSHS.113;Great, more infidels...;;;;;;;;;;;;;x
+EVTNAMESHS.114;Maronites Condemned;;;;;;;;;;;;;x
+EVTDESCSHS.114;The inquisition against the Maronites finally coming to a close, [Root.RelHead.GetBestName] has re-affirmed the Third Council of Constantinople and declared an anathema to all the Maronites as Monothelite heretics.\n\nUntil they fully repent and return in penance to the Church of Rome, the Pope has declared that all properties of the Maronites are forfeit.;;;;;;;;;;;;;x
+EVTOPTDSHS.114;They shall be dealt with.;;;;;;;;;;;;;x
+EVTOPTESHS.114;Was it not obvious?;;;;;;;;;;;;;x
+EVTNAMESHS.117;The Western Schism;;;;;;;;;;;;;x
+EVTDESCSHS.117;The Antipope phenomenom, an opponent of a sitting Pope, was not a new thing, having existed since the early third century whether elevated by rival factions or secular rulers. However, the ascension of [From.GetFirstName] marks the first time an Antipope was chosen by the very same people who elected the sitting Pope, [Root.GetFirstName].\n\nAn era of corruption of clergy in Catholic Europe, secular princes prepare to take sides as uncertainties of their Church looms ahead.;;;;;;;;;;;;;x
+EVTOPTASHS.117;Anathema to the pretender!;;;;;;;;;;;;;x
+EVTOPTBSHS.117;I am the true successor of Saint Peter!;;;;;;;;;;;;;x
+EVTOPTCSHS.117;God help our Mother Church!;;;;;;;;;;;;;x
+EVTOPTDSHS.117;Rome should abandon it's false teachings!;;;;;;;;;;;;;x
+EVTOPTESHS.117;This of no concern to us.;;;;;;;;;;;;;x
+EVTOPTFSHS.117;Hah! The fools bicker amongst themselves!;;;;;;;;;;;;;x
+EVTNAMESHS.118;An Olive Branch;;;;;;;;;;;;;x
+EVTDESCSHS.118;With the existence of two claimaints to the See of Rome threatening to tear apart Europe in two, the College of Cardinal has reached a decision to solve this issue by asking both the Pope and the Antipope to resign thus leaving the office vacant so another may be elected.;;;;;;;;;;;;;x
+EVTOPTASHS.118;I do this in the name of Christ.;;;;;;;;;;;;;x
+EVTOPTBSHS.118;We can only pray...;;;;;;;;;;;;;x
+EVTOPTCSHS.118;Interesting...;;;;;;;;;;;;;x
+EVTOPTDSHS.118;These Latins are foolish.;;;;;;;;;;;;;x
+EVTOPTESHS.118;This of no concern to us.;;;;;;;;;;;;;x
+EVTNAMESHS.120;A New Pope;;;;;;;;;;;;;x
+EVTDESCSHS.120;Despite the impending crisis or perhaps because of it, the two sides have decided to resolve the matter peacefully, resigning their claim to the See of Rome allowing the College of Cardinal to elect a new Pope in their places.\n\nWith that, the crisis in Catholic Europe has been averted though whether this is the last time such an event occurs remains to be seen.;;;;;;;;;;;;;x
+EVTOPTASHS.120;For the love of Christ.;;;;;;;;;;;;;x
+EVTOPTBSHS.120;For the sake of peace.;;;;;;;;;;;;;x
+EVTOPTCSHS.120;Thank God!;;;;;;;;;;;;;x
+EVTOPTDSHS.120;That was boring...;;;;;;;;;;;;;x
+EVTOPTESHS.120;This of no concern to us.;;;;;;;;;;;;;x
+EVTOPTFSHS.120;That was uneventful...;;;;;;;;;;;;;x
+EVTNAMESHS.121;Three Popes;;;;;;;;;;;;;x
+EVTDESCSHS.121;Although the Cardinals begged the two sitting incumbent to resign for the peace of their Church, the two claimaints have steadfastly refused to step down.\n\nIn order to bring back order, the College of Cardinal decided to elect a third claimaint to the See of Rome so that the incumbents may decide to resign then, but instead has backfired resulting in an unprecedented event of having three living rival claimants to Throne of Saint Peter.;;;;;;;;;;;;;x
+EVTOPTBSHS.121;Christ have mercy on us...;;;;;;;;;;;;;x
+EVTOPTCSHS.121;Hah! The schismatics having more schisms!;;;;;;;;;;;;;x
+EVTOPTDSHS.121;This is the end for all Melkites.;;;;;;;;;;;;;x
+EVTOPTESHS.121;Hah! Deserving end for the infidels.;;;;;;;;;;;;;x

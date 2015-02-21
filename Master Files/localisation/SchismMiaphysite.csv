@@ -1,0 +1,25 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+repudiate_chalcedon_miaphysite_catholic;Repudiate the Council of Chalcedon (Catholic);;;;;;;;;;;;;x
+repudiate_chalcedon_miaphysite_catholic_desc;The breakage after the Council of Chalcedon increasingly saw the Roman Church gaining illegitimate power, but if all three of the episcopal sees of Saint Peter could be restored the Miaphysite faith, there may be a chance to bring back order.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.301;The Council of Chalcedon is Repudiated.;;;;;;;;;;;;;x
+EVTNAMESHS.301;Council of Chalcedon Repudiated (Catholic);;;;;;;;;;;;;x
+EVTDESCSHS.301;At last the Roman Church has been brought back in line to the Church. With the spread of Miaphysitism and the subjugation of vital episcopal see of Rome, the Catholic faith now holds little sway over the people of Europe. There will be those who still cling to it, but they will be few in number and the Petrine Sees can once more claim universal rule over all of Christendom.;;;;;;;;;;;;;x
+EVTOPTASHS.302;If that's the way the wind is blowing...;;;;;;;;;;;;;x
+EVTOPTBSHS.302;I will never give up my faith!;;;;;;;;;;;;;x
+repudiate_chalcedon_miaphysite_orthodox;Repudiate the Council of Chalcedon (Orthodox);;;;;;;;;;;;;x
+repudiate_chalcedon_miaphysite_orthodox_desc;The Council of Chalcedon resulted in a step backwards in Christian theology thus resulting in a schism, but if the see of Constantinople can be subjugated to the Miaphysite faith, there may be a chance to end this schism.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.303;The Council of Chalcedon is Repudiated.;;;;;;;;;;;;;x
+EVTNAMESHS.303;Council of Chalcedon Repudiated (Orthodox);;;;;;;;;;;;;x
+EVTDESCSHS.303;At last the Orthodox Melkites has seen the error of their ways. With the spread of Miaphysitism, the Orthodox faith now holds little sway within Europe. There will be those who still cling to it, but they will be few in number and the Petrine Sees can once more claim universal rule over all of Christendom.;;;;;;;;;;;;;x
+EVTOPTASHS.304;If that's the way the wind is blowing...;;;;;;;;;;;;;x
+EVTOPTBSHS.304;I will never give up my faith!;;;;;;;;;;;;;x
+enforce_ephesus_miaphysite;Enforce the Council of Ephesus;;;;;;;;;;;;;x
+enforce_ephesus_miaphysite_desc;The Third Ecumenical Council saw final condemnation of the heretic Nestorius. However, due to not being invited, the bishops outside the Roman Empire were not invited resulting in them siding with him, but if the significant episcopal sees of these schismatics could be restored to the Miaphysite faith, there may be a chance to bring back these Churches to the True Faith.;;;;;;;;;;;;;x
+EVTTOOLTIPSHS.305;The Council of Ephesus is enforced.;;;;;;;;;;;;;x
+EVTNAMESHS.305;Council of Ephesus Enforced;;;;;;;;;;;;;x
+EVTDESCSHS.305;At last the Nestorians has abandoned its nonsense on denying the 'Mother of God' thus returning to the proper understanding of Christ. With the spread of Miaphysitism, the Nestorian faith now holds little sway within Christendom. There will be those who still cling to it, but they will be few in number and the Petrine Sees can once more claim universal rule over all of Christendom.;;;;;;;;;;;;;x
+EVTOPTASHS.306;If that's the way the wind is blowing...;;;;;;;;;;;;;x
+EVTOPTBSHS.306;I will never give up my faith!;;;;;;;;;;;;;x
+EVTDESCSHS.307;With the city under our control, the Patriarchate of Antioch has been properly restored as one of the three Petrine Sees in the Miaphysite Church. It was originally founded by Saint Peter the Apostle, who is regarded as the first Pope by the Roman Catholic Church.;;;;;;;;;;;;;x
+EVTDESCSHS.308;With the city under our control, the Papacy of Alexandria has been properly restored as one of the three Petrine Sees as well as the Headquarters for Miaphysite Church. It was originally founded by Saint Mark the Evangelist, who became Alexandria's first patriarch.;;;;;;;;;;;;;x
+EVTDESCSHS.309;With the city under East Roman control, the Papacy of Rome has been properly restored as one of the three Petrine Sees in the Miaphysite Church. If all three historical sees are returned to the Church, the Chalcedonian Schism between the Miaphysites and the Melkites may be partially mended.;;;;;;;;;;;;;x

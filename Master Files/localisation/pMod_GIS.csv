@@ -1,0 +1,44 @@
+inbred_1;Homozygosity: 2.5%;;;;;;;;;;;;;x
+inbred_1_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_2;Homozygosity: 5%;;;;;;;;;;;;;x
+inbred_2_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_3;Homozygosity: 7.5%;;;;;;;;;;;;;x
+inbred_3_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_4;Homozygosity: 10%;;;;;;;;;;;;;x
+inbred_4_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_5;Homozygosity: 12.5%;;;;;;;;;;;;;x
+inbred_5_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_6;Homozygosity: 15%;;;;;;;;;;;;;x
+inbred_6_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_7;Homozygosity: 17.5%;;;;;;;;;;;;;x
+inbred_7_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_8;Homozygosity: 20%;;;;;;;;;;;;;x
+inbred_8_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_9;Homozygosity: 22.5%;;;;;;;;;;;;;x
+inbred_9_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_10;Homozygosity:25%;;;;;;;;;;;;;x
+inbred_10_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_11;Homozygosity:27.5%;;;;;;;;;;;;;x
+inbred_11_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_12;Homozygosity:30%;;;;;;;;;;;;;x
+inbred_12_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_13;Homozygosity:32.5%;;;;;;;;;;;;;x
+inbred_13_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_14;Homozygosity:35%;;;;;;;;;;;;;x
+inbred_14_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_15;Homozygosity:37.5%;;;;;;;;;;;;;x
+inbred_15_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_16;Homozygosity:40%;;;;;;;;;;;;;x
+inbred_16_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_17;Homozygosity:42.5%;;;;;;;;;;;;;x
+inbred_17_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_18;Homozygosity:45%;;;;;;;;;;;;;x
+inbred_18_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_19;Homozygosity:47.5%;;;;;;;;;;;;;x
+inbred_19_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+inbred_20;Homozygosity:50%;;;;;;;;;;;;;x
+inbred_20_desc;Homozygosity determines how inbred a character is. The higher this value, the greater the risk of being born with or having children with defects.;;;;;;;;;;;;;x
+purebred;Purebred;;;;;;;;;;;;;x
+purebred_desc;This person's lineage is so pure that any further inbreeding will not cause additional defects. Genetic traits are more likely to be passed on or inherited.;;;;;;;;;;;;;x
+GIS_EVENT;GIS Event - You should not be able to see this!;;;;;;;;;;;;;x
+GIS_OPTION;Shouldn't be visible!;;;;;;;;;;;;;x

@@ -1,0 +1,221 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Vanilla Provinces
+PROV673;Hereti;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV679;Shida Kartli;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV683;Arzan;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV704;Sper;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+#New Provinces
+PROV1438;Lekia;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1439;Sarir;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1440;Klarjeti;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1441;Kvemo Kartli;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1442;Karbala;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1444;Barda'a;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1445;Khachen;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1447;Amida;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+#New Sea Provinces
+PROV1446;Lake Van;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+#Unused Provinces
+PROV1443;#;No Localisation;No Localisation;;No Localisation;;;;;;;;;x
+PROV1448;Dongola;;;;;;;;x
+PROV1449;Korosoko;;;;;;;;;x
+PROV1450;Bisharin;;;;;;;;;;;;;;;;;x
+PROV1451;Bayuda;;;;;;;;;;;x
+PROV1452;Merawi;;;;;;;;;;;;x
+PROV1453;Korti;;;;;;;;;;;x
+PROV1454;Atbai;;;;;;;;;;;x
+PROV1455;Alula;;;;;;;;;;;;x
+PROV1456;Makhir;;;;;;;;;;x
+PROV1457;Berber;;;;;;;;;;;;;;x
+PROV1458;Jarin;;;;;;;;;;;x
+PROV1459;Baquilin;;;;;;;;;;;;x  
+PROV1460;Semhar;;;;;;;;;;;;;;x
+PROV1461;Akele Guzay;;;;;;;;;;;;x
+PROV1462;Saho;;;;;;;;;x
+PROV1463;Ankala;;;;;;;;;x
+PROV1464;Raheita;;;;;;;;;x
+PROV1465;Gobaad;;;;;;;;;;;x
+PROV1466;Adal;;;;;;;;;;;;x
+PROV1467;Sanag;;;;;;;;;;;;x
+PROV1468;Bara;;;;;;;;;;;;;x
+PROV1469;Shendi;;;;;;;;;;;;;;x
+PROV1470;Merowe;;;;;;;;;;;x
+PROV1471;Kawa;;;;;;;;;;;;x
+PROV1472;Kordofan;;;;;;;;;;;;;x
+PROV1473;WadiMadani;;;;;;;;;;;;x
+PROV1474;Butana;;;;;;;;;;;;;x
+PROV1475;Umm Badr;;;;;;;;;;x
+PROV1476;Meidob;;;;;;;;;;;;x
+PROV1477;Dar Zaghawa;;;;;;;;;;;;;;;x
+PROV1478;Jebel Marra;;;;;;;;;;;;;;x
+PROV1479;Jebel Gadir;;;;;;;;;;;;;;x
+PROV1480;Nyala;;;;;;;;x
+PROV1481;Dar Sila;;;;;;;;;;;;x
+PROV1482;Jebel Nuba;;;;;;;;;;;;;x
+PROV1483;Kiir;;;;;;;;;;;x
+PROV1484;Bahr Al Ghazi;;;;;;;;;;;;x
+PROV1485;Taqali;;;;;;;;;;;x
+PROV1486;Jebelain;;;;;;;;;;;;;;;x
+PROV1487;Renik;;;;;;;;;;;x
+PROV1488;Shilluk;;;;;;;;;;;x
+PROV1489;Karkoj;;;;;;;;;;;;;x
+PROV1490;Fazogli;;;;;;;;;;;x
+PROV1491;Nuer;;;;;;;;;;;;x
+PROV1492;Sudd;;;;;;;;;;;;;;x
+PROV1493;Dinka;;;;;;;;;;;x
+PROV1494;Gondokoro;;;;;;;;;;;;;x
+PROV1495;Barka;;;;;;;;;;;x
+PROV1496;Taka;;;;;;;;;;;x
+PROV1497;Senhit;;;;;;;;;;;;;x
+PROV1498;Hamasien;;;;;;;;;;x
+PROV1499;Seraye;;;;;;;;;;;;;x
+PROV1500;Bazin;;;;;;;;;;;;x
+PROV1501;Qedaref;;;;;;;;;;x
+PROV1502;Agame;;;;;;;;;;;;;x
+PROV1503;Tigre;;;;;;;;;;;;;;;x
+PROV1504;Tembien;;;;;;;;;;;;x
+PROV1505;Woggera;;;;;;;;;;;;;x
+PROV1506;Dankali;;;;;;;;;;;;;;x
+PROV1507;Mora;;;;;;;;;;;;x
+PROV1508;Shire;;;;;;;;;;x
+PROV1509;Tselemti;;;;;;;;;;;x
+PROV1510;Waldebba;;;;;;;;;;;x
+PROV1511;Wolqayt;;;;;;;;;;;;;x
+PROV1512;Gubba;;;;;;;;;;;;x
+PROV1513;Gurgura;;;;;;;;;;;;;x
+PROV1514;Gabal;;;;;;;;;;;;;x
+PROV1515;Awsa;;;;;;;;;;;;;x
+PROV1516;Gidim;;;;;;;;;;;;;x
+PROV1517;Dobe'a;;;;;;;;;;x
+PROV1518;Bizamo;;;;;;;;;;;;;x
+PROV1519;Metena;;;;;;;;;;;;x
+PROV1520;Qemant;;;;;;;;;;;x
+PROV1521;Agaw Awi;;;;;;;;;;;;;x
+PROV1522;Bahir Dar;;;;;;;;;;;;x
+PROV1523;Gafat;;;;;;;;;;;;;;x
+PROV1524;Gimbi;;;;;;;;;;;;x
+PROV1525;Inderta;;;;;;;;;;;;x
+PROV1526;Endamehoni;;;;;;;;;;;;;x
+PROV1527;Angot;;;;;;;;;;;;;;x
+PROV1528;Lasta;;;;;;;;;;;;;x
+PROV1529;Abergale;;;;;;;;;;;;;x
+PROV1530;Simien;;;;;;;;;;;;x
+PROV1531;Wegera;;;;;;;;;;;x
+PROV1532;Dembiya;;;;;;;;;;;;;;;x
+PROV1533;Begmeder;;;;;;;;;;;;;x
+PROV1534;Dera;;;;;;;;;;;;x
+PROV1535;Kotla;;;;;;;;;;;x
+PROV1536;Bichena;;;;;;;;;;;x
+PROV1537;Shewa;;;;;;;;;;;;;;;x
+PROV1538;Mecha;;;;;;;;;;;;x
+PROV1539;Ganz;;;;;;;;;;;x
+PROV1540;Marhabete;;;;;;;;;;;;;;x
+PROV1541;Wegede;;;;;;;;;;;;;x
+PROV1542;Simada;;;;;;;;;;;;;;x
+PROV1543;Bugna;;;;;;;;;;;;;;x
+PROV1544;Ambassei;;;;;;;;;;;;;;x
+PROV1545;Amhara;;;;;;;;;;;;;;x
+PROV1546;Delanta;;;;;;;;;;;;;;x
+PROV1547;Kutaber;;;;;;;;;;;;;x
+PROV1548;Walaqa;;;;;;;;;;;;;;x
+PROV1549;Menz;;;;;;;;;;;;;;;x
+PROV1550;Yifat;;;;;;;;;;;;;;x
+PROV1551;Bulga;;;;;;;;;;;;x
+PROV1552;Fatagar;;;;;;;;;;;;;x
+PROV1553;Werji;;;;;;;;;;;x
+PROV1554;Hargaya;;;;;;;;;;;x
+PROV1555;Gidaya;;;;;;;;;;;;;x
+PROV1556;Ennarya;;;;;;;;;;;;x
+PROV1557;Anuak;;;;;;;;;;;;;x
+PROV1558;Turkana;;;;;;;;;;;x
+PROV1559;Gambela;;;;;;;;;;;;;;x
+PROV1560;Sool;;;;;;;;;;;;;;;;;x
+PROV1561;Togdher;;;;;;;;;;;x
+PROV1562;Hawd;;;;;;;;;;;x
+PROV1563;Nugal;;;;;;;;;;;x
+PROV1564;Mudug;;;;;;;;;;;;;;x
+PROV1565;Heb;;;;;;;;;;;;;x
+PROV1566;Mereg;;;;;;;;;;;;x
+PROV1567;Maqidishu;;;;;;;;;;;;;;;;x
+PROV1568;Shabelle;;;;;;;;;;;;;;;;;x
+PROV1569;Jubba;;;;;;;;;;;;;;;x
+PROV1570;Bay;;;;;;;;;;;;;;x
+PROV1571;Miraan;;;;;;;;;;;;;;x
+PROV1572;Himan;;;;;;;;;;;;x
+PROV1573;Orma;;;;;;;;;;;;;;x
+PROV1574;Marsabit;;;;;;;;;;;x
+PROV1575;Goldiya;;;;;;;;;;;;;x
+PROV1576;Geleb;;;;;;;;;;;;;;x
+PROV1577;Gimira;;;;;;;;;;;;;x
+PROV1578;Mocha;;;;;;;;;;;;;;x
+PROV1579;Bakol;;;;;;;;;;;;;;x
+PROV1580;Qalafo;;;;;;;;;;;;x
+PROV1581;Gidiya;;;;;;;;;;;;;x
+PROV1582;Erer;;;;;;;;;;;;;x
+PROV1583;Gedo;;;;;;;;;;;;x
+PROV1584;Borena;;;;;;;;;;;;;x
+PROV1585;Barentuma;;;;;;;;;;;;;x
+PROV1586;Hobad;;;;;;;;;;;;x
+PROV1587;Delow;;;;;;;;;;;;;x
+PROV1588;Wabe;;;;;;;;;;;;;;x
+PROV1589;Dawaro;;;;;;;;;;;;;;x
+PROV1590;Bahrgamo;;;;;;;;;;;;;;x
+PROV1591;Bale;;;;;;;;;;;;;;;x
+PROV1592;Robe;;;;;;;;;;;;;x
+PROV1593;Bench;;;;;;;;;;;x
+PROV1594;Gofa;;;;;;;;;;;x
+PROV1595;Kefa;;;;;;;;;;;x
+PROV1596;Gore;;;;;;;;;;;x
+PROV1597;Sor;;;;;;;;;;;x
+PROV1598;Arjo;;;;;;;;;x
+PROV1599;Limu;;;;;;;;;;;;x
+PROV1600;Gumma;;;;;;;;;;;x
+PROV1601;Gera;;;;;;;;;;;;x
+PROV1602;Goma;;;;;;;;;;x
+PROV1603Gofa;;;;;;;;;;;;;x
+PROV1604;Konta;;;;;;;;;;;;x
+PROV1605;Gardula;;;;;;;;;;;;x
+PROV1606;Sugamo;;;;;;;;;;;;;;x
+PROV1607;Gedeo;;;;;;;;;;;;;x
+PROV1608;Gama;;;;;;;;;;;x
+PROV1609;Daara;;;;;;;;;;x
+PROV1610;Hadiya;;;;;;;;;;;x
+PROV1611;Sharkha;;;;;;;;;;;x
+PROV1612;Wej;;;;;;;;;;;x
+PROV1613;Maya;;;;;;;;;;;x
+PROV1614;Mugar;;;;;;;;;;;;x
+PROV1615;Aymaital;;;;;;;;;;;x
+PROV1616;Gurage;;;;;;;;;;;x
+PROV1617;Kambaeta;;;;;;;;;;;x
+PROV1618;Jimma;;;;;;;;;;;;;;;x
+PROV1619;Janjaro;;;;;;;;;x
+PROV1620;Garo;;;;;;x
+PROV1621;Jibat;;;;;;;;;;x
+k_jordan;Jordan;;;;;;;;;;;;x
+d_arabia_petrae;Nabatea;;;;;;;;;;;x
+k_latakia;Latakia;;;;;;;;;;;;;x
+d_beirut;Lebanon;;;;;;;;;;;x
+k_mesopotamia;Babylon;;;;;;;;;;;;x
+k_assyria;Assyria;;;;;;;;;;x
+d_basra;Khariba;;;;;;;;;;;;;;x
+d_kurdistan;Kurdistan;;;;;;;;;;;x
+k_kurdistan;Kurdistan;;;;;;;;;;x
+d_bostra;Bostra;;;;;;;;;;;;;x
+d_kermanshah;Luristan;;;;;;;;;;x
+k_berberia;Berberia;;;;;;;;;;x
+k_azania;Somalia;;;;;;;;;x
+k_damot;Damot;;;;;;;;x
+k_white_nile;White Nile;;;;;;;;;x
+k_sahel;Sahel;;;;;;;;;;;x
+egyptian_arabic;Misri Arabic;;;;;;;;;;;;;x
+lvl_one_chalcendonian;Insignificant Chalcendonian Minority;;;;;;;;;;;;x
+lvl_two_chalcendonian;Small Chalcendonian Minroty;;;;;;;;;;;x
+lvl_three_chalcendonian;Chalcendonian Minority;;;;;;;;;;x
+lvl_four_chalcendonian;Large Chalcendonian Minority;;;;;;;;;x
+lvl_one_coptic;Insignificant Coptic Minority;;;;;;;;;;x
+lvl_two_coptic;Small Coptic Minority;;;;;;;;;;;;x
+lvl_three_coptic;Coptic Minority;;;;;;;;;;x
+lvl_four_coptic;Large Coptic Minority;;;;;;;;;;x
+k_karaite_exilarch;Karaite Exilarchate;;;;;;;;;;x
+chalcendonian;Chalcendonian;;;;;;;;;;;;;x
+chalcendonian_desc;Chalcendonian Christianity is the largest Chrstian Sect in the game constitugint Orthodox and Catholicism before the Great Schism;;;;;;;;;;;;;x

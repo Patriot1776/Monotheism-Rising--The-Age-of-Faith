@@ -1,0 +1,125 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+status_of_women;Status of Women;;;;;;;;;;;;x
+status_of_women_desc;Women's Status Laws determine which women, if any, you can appoint to council positions, which gender laws are available, and whether women can hunt or lead troops. Departing from traditional gender norms costs large amounts of piety, and is unpopular with religious authorities.;;;;;;;;;;;;;x
+statusofwomen_0_option;Trad.;;;;;;;;;;;;;x
+statusofwomen_0;Traditional Status of Women;;;;;;;;;;;;;x
+statusofwomen_0_desc;Women's status is determined solely by the traditions of your §Y[Root.Culture.GetName]§! Culture and §Y[Root.Religion.GetName]§! Religion;;;;;;;;;;;;;x
+statusofwomen_1_option;Marginal;;;;;;;;;;;;;x
+statusofwomen_1;Marginal Status of Women;;;;;;;;;;;;;x
+statusofwomen_1_desc;Although women are seen as less than men, in the shadows blood-ties, trust, and connections count for far more\n;;;;;;;;;;;;;x
+statusofwomen_2;Limited Status of Women;;;;;;;;;;;;;x
+statusofwomen_2_option;Limited;;;;;;;;;;;;;x
+statusofwomen_2_desc;Although women are seen as less than men, married women, widows and women religious are recognised as equals in the arts of truck and barter, due their role in the management of their husband's or religion's estates\n;;;;;;;;;;;;;x
+statusofwomen_3_option;Moderate;;;;;;;;;;;;;x
+statusofwomen_3;Moderate Status of Women;;;;;;;;;;;;;x
+statusofwomen_3_desc;Although most women are seen as less than men, the most powerful and well connected noble women are recognised as equals in those arts not barred to them by the frailty of their flesh\n;;;;;;;;;;;;;x
+statusofwomen_4_option;Notable;;;;;;;;;;;;;x
+statusofwomen_4;Notable Status of Women;;;;;;;;;;;;;x
+statusofwomen_4_desc;Although most women are seen as less than men, the most powerful and well connected noble women are recognised as true equals\n;;;;;;;;;;;;;x
+statusofwomen_effect_spymaster_yes;(§G*§!) §Y[Root.GetSpymasterName]§!: Allow female dynasty, female consorts & lovers\n;;;;;;;;;;;x
+statusofwomen_effect_spymaster_no;(§RX§!)§Y[Root.GetSpymasterName]§!: Allow female dynasty, female consorts & lovers\n;;;;;;;;;;;x
+statusofwomen_effect_spymaster_pagan;(§G*§!) §Y[Root.GetSpymasterName]§!: Allow all §Y[Root.Religion.GetGroupName]§! women\n;;;;;;;;;;;x
+statusofwomen_effect_spymaster_religion;(§G*§!) §Y[Root.GetSpymasterName]§!: Allow all §Y[Root.Religion.GetName]§! women\n;;;;;;;;;;;x
+statusofwomen_effect_treasurer_yes;(§G*§!) §Y[Root.GetTreasurerName]§!: Allow married, widowed & religious women\n;;;;;;;;;;;x
+statusofwomen_effect_treasurer_no;(§RX§!) §Y[Root.GetTreasurerName]§!: Allow married, widowed & religious women\n;;;;;;;;;;;x
+statusofwomen_effect_treasurer_religion;(§G*§!) §Y[Root.GetTreasurerName]§!: Allow all §Y[Root.Religion.GetName]§! women\n;;;;;;;;;;;x
+statusofwomen_effect_chancellor_yes;(§G*§!) §Y[Root.GetChancellorName]§!: Allow wife, mother, female dynasty & women holding landed titles\n;;;;;;;;;;;x
+statusofwomen_effect_chancellor_no;(§RX§!) §Y[Root.GetChancellorName]§!: Allow wife, mother, female dynasty & women holding landed titles\n;;;;;;;;;;;x
+statusofwomen_effect_chancellor_religion;(§G*§!) §Y[Root.GetChancellorName]§!: Allow all §Y[Root.Religion.GetName]§! women\n;;;;;;;;;;;x
+statusofwomen_effect_marshal_yes;(§G*§!) §Y[Root.GetMarshalName]/Lead Troop§!: Allow wife, mother, female dynasty & women holding landed titles\n;;;;;;;;;;;x
+statusofwomen_effect_marshal_no;(§RX§!) §Y[Root.GetMarshalName]/Lead Troops§!: Allow wife, mother, female dynasty & women holding landed titles\n;;;;;;;;;;;x
+statusofwomen_effect_marshal_self;(§Y-§!) §Y[Root.GetMarshalName]/Lead Troops§!: Allow female rulers to lead their own troops\n;;;;;;;;;;;x
+statusofwomen_effect_marshal_religion;(§G*§!) §Y[Root.GetMarshalName]/Lead Troops§!: Allow all §Y[Root.Religion.GetName]§! women\n;;;;;;;;;;;x
+statusofwomen_effect_other_yes;(§G*§!) §YGrand Hunts§!: Can be held by §YChristian§! & §YPagan§! women rulers\n;;;;;;;;;;;x
+statusofwomen_effect_other_no;(§RX§!) §YGrand Hunts§!: Can be held by §YChristian§! & §YPagan§! women rulers\n;;;;;;;;;;;x
+statusofwomen_effect_other_muslimyes;(§G*§!) §YFurusiyya§!: Can be held by §YMuslim§! women rulers\n;;;;;;;;;;;x
+statusofwomen_effect_other_muslimno;(§RX§!) §YFurusiyya§!: Can be held by §YMuslim§! women rulers\n;;;;;;;;;;;x
+statusofwomen_effect_other_khatunno;(§G*§!) §YNerge§!: Can be held by ruling §YKhatun§! of §YMongol§! Empires\n;;;;;;;;;;;x
+statusofwomen_effect_other_khatunyes;(§RX§!) §YNerge§!: Can be held by ruling §YKhatun§! of §YMongol§! Empires\n;;;;;;;;;;;x
+statusofwomen_effect_law_low;(§Y-§!) §YAgnatic§! & §YAgnatic Cognatic§! gender laws available\n;;;;;;;;;;;x
+statusofwomen_effect_law_medium;(§Y-§!) §YAgnatic Cognatic§! & §YAbsolute Cognatic§! gender laws available\n;;;;;;;;;;;x
+statusofwomen_effect_law_high;(§Y-§!) Only §YAbsolute Cognatic§! gender law available\n;;;;;;;;;;;x
+statusofwomen_effect_law_muslimlow;(§Y-§!) Only §YAgnatic§! gender law available\n;;;;;;;;;;;x
+statusofwomen_effect_law_basquelow;(§Y-§!) §YAgnatic§!, §YAgnatic Cognatic§! & §YAbsolute Cognatic§! gender laws available\n;;;;;;;;;;;x
+statusofwomen_effect_separator;;;;;;;;;;;;x
+statusofwomen_effect_lf;\n;;;;;;;;;;;x
+statusofwomen_effect_pietygain_2400;Gain §G2400§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_1600;Gain §G1600§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_1400;Gain §G1400§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_1200;Gain §G1200§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_800;Gain §G800§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_700;Gain §G700§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_600;Gain §G600§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_400;Gain §G400§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_350;Gain §G350§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_300;Gain §G300§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_200;Gain §G200§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_150;Gain §G150§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_100;Gain §G100§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietygain_50;Gain §G50§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_2400;Lose §R2400§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_1600;Lose §R1600§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_1200;Lose §R1200§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_800;Lose §R800§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_600;Lose §R600§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_400;Lose §R400§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_300;Lose §R300§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_200;Lose §R200§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_100;Lose §R100§! [Root.Religion.GetPietyName] ;;;;;;;;;;;;x
+statusofwomen_effect_pietyloss_50;Lose §R50§! [Root.Religion.GetPietyName]. ;;;;;;;;;;;;x
+statusofwomen_effect_discount75_both;- §G25%§! of standard cost as §Y[Root.GetTitledFirstName]§! is both §Y[Root.Culture.GetName]§!, and §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_discount625_both;- §G37.5%§! of standard cost as §Y[Root.GetTitledFirstName]§! is both §Y[Root.Culture.GetName]§!, and §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_discount50_religion;- §G50%§! of standard cost as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_discount50_culture;- §G50%§! of standard cost as §Y[Root.GetTitledFirstName]§! is §Y[Root.Culture.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_discount25_religion;- §G75%§! of standard cost as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_discount25_both;- §G75%§! of standard cost as §Y[Root.GetTitledFirstName]§! is §Y[Root.Culture.GetName]§!, but is also §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_penalty50_religion;- §R150%§! of standard cost as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount75_both;- §R25%§! of standard gain as §Y[Root.GetTitledFirstName]§! is both §Y[Root.Culture.GetName]§!, and §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount625_both;- §R37.5%§! of standard gain as §Y[Root.GetTitledFirstName]§! is both §Y[Root.Culture.GetName]§!, and §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount50_religion;- §R50%§! of standard gain as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount50_culture;- §R50%§! of standard gain as §Y[Root.GetTitledFirstName]§! is §Y[Root.Culture.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount25_religion;- §R75%§! of standard gain as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_discount25_both;- §R75§! of standard gain as §Y[Root.GetTitledFirstName]§! is §Y[Root.Culture.GetName]§!, but is also §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_effect_back_penalty50_religion;- §G150%§! of standard gain as §Y[Root.GetTitledFirstName]§! is §Y[Root.Religion.GetName]§!\n;;;;;;;;;;;;x
+statusofwomen_allow_notpreviouslychanged;§Y[Root.GetTitledFirstName]§! has not previously changed the Women's Status Laws\n;;;;;;;;;;;;x
+statusofwomen_allow_notreassertedtradition;§Y[Root.GetTitledFirstName]§! has not reasserted '§YTraditional Status of Women§!'\n;;;;;;;;;;;;x
+statusofwomen_allow_haspiety;Has the necessary [Root.Religion.GetPietyName] or the Lunatic trait\n;;;;;;;;;;;;x
+statusofwomen_allow_lawhigherthan_1;Law at least '§YLimited Status of Women§!'\n;;;;;;;;;;;;x
+statusofwomen_allow_lawhigherthan_2;Law at least '§YModerate Status of Women§!'\n;;;;;;;;;;;;x
+statusofwomen_allow_historicfigure;Is a Female Ruler recognised as a §GWorld Historic Figure§!\n;;;;;;;;;;;;x
+statusofwomen_allow_increase;Has the prior available Status of Women law\n;;;;;;;;;;;;x
+statusofwomen_allow_increase_nonpagan;Has the prior available Status of Women law\n;;;;;;;;;;;;x
+statusofwomen_allow_increase_pagan;Is Pagan and has the '§YTraditional Status of Women§' law\n;;;;;;;;;;;;x
+statusofwomen_allow_decrease;Has the next available Status of Women law\n;;;;;;;;;;;;x
+statusofwomen_flag_historicfigure;§Y[Root.GetTitledFirstName]§! will be recognised as a §GWorld Historic Figure§!\n;;;;;;;;;;;;x
+statusofwomen_eventopt_thumbsdown;;;;;;;;;;;;;x
+statusofwomen_eventopt_thumbsup;;;;;;;;;;;;;x
+statusofwomen_eventopt_whatever;;;;;;;;;;;;;x
+statusofwomen_evtdesc_liege_inc;Now that I have revised the laws regarding the Status of Women, those of them having good and noble character are treated with a §Ggreater respect§! in the lands of my demesne.\n\nAlthough as my vassal, your lands are yours to govern as you see fit, I commend the virtues of this revised law to you.;;;;;;;;;;;;x
+statusofwomen_eventopt_inc_approve_follow;[From.GetTitledFirstName] respects the abilities of women...as do I;;;;;;;;;;;;x
+statusofwomen_eventopt_inc_approve_permissive;It is good that [From.GetTitledFirstName] follows our lead;;;;;;;;;;;;x
+statusofwomen_eventopt_inc_disapprove_follow;This will end badly, but as a loyal [Root.GetTitle] I follow my [From.GetTitle];;;;;;;;;;;;x
+statusofwomen_eventopt_inc_disapprove_notfollow;I am sickened by such disrespect of our traditions!;;;;;;;;;;;;x
+statusofwomen_eventopt_inc_dissemble_notfollow;How could any dispute a decision such as this?;;;;;;;;;;;;x
+statusofwomen_eventopt_inc_notmybusiness;[From.GetTitledFirstName] rules [From.GetHerHis] demesne. I rule mine.;;;;;;;;;;;;x
+statusofwomen_evtdesc_liege_dec;Now that I have revised the laws of my demesne regarding the Status of Women, their previous mistaken elevation above their natural station is §Rbeing corrected§!.\n\nAlthough as my vassal, your lands are yours to govern as you see fit, I commend the virtues of this revised law to you.;;;;;;;;;;;;x
+statusofwomen_eventopt_dec_approve_follow;[From.GetTitledFirstName] respects tradition...as do I;;;;;;;;;;;;x
+statusofwomen_eventopt_dec_approve_notfollow;It is good that [From.GetTitledFirstName] follows our lead;;;;;;;;;;;;x
+statusofwomen_eventopt_dec_disapprove_follow;This is will end badly, but as a loyal [Root.GetTitle] I follow my [From.GetTitle];;;;;;;;;;;;x
+statusofwomen_eventopt_dec_disapprove_notfollow;I am sickened by such disrespect of women!!;;;;;;;;;;;;x
+statusofwomen_eventopt_dec_dissemble_notfollow;How could any dispute a decision such as this?;;;;;;;;;;;;x
+statusofwomen_eventopt_dec_notmybusiness;[From.GetTitledFirstName] rules [From.GetHerHis] demesne. I rule mine.;;;;;;;;;;;;x
+statusofwomen_eventtrig_same;your Status of Women law is the same as your liege;;;;;;;;;;;;x
+statusofwomen_eventtrig_restrictive;your Status of Women law is more restrictive than your liege;;;;;;;;;;;;x
+statusofwomen_eventtrig_permissive;your Status of Women law is more permissive than your liege;;;;;;;;;;;;x
+statusofwomen_eventopt_effect_vassalsinformed;Vassals and courtiers are informed of the law change\n;;;;;;;;;;;;x
+statusofwomen_decision_husband_switchdynasty;Ask [Root.Spouse.GetTitledFirstName] to join house [Root.GetOnlyDynastyName];;;;;;;;;;;;x
+statusofwomen_decision_husband_switchdynasty_desc;Since women have some status in the §Y[Root.PrimaryTitle.GetFullName]§! you may ask your husband to join your dynasty and help ensure the continuation of your name.;;;;;;;;;;;;x
+statusofwomen_evtdesc_ai_truecognatic;I have decided to implement the True Cognatic succession law.;;;;;;;;;;;;x
+opinion_joined_dynasty;Joined my dynasty;;;;;;;;;;;;x
+opinion_statusofwomen_bad_change;Outraged by Status Law Change;;;;;;;;;;;;x
+opinion_statusofwomen_good_change;Pleased by Status Law Change;;;;;;;;;;;;x
+opinion_statusofwomen_followed_lead;Followed My Lead;;;;;;;;;;;;x
+opinion_statusofwomen_defied_medauth;Defied Me;;;;;;;;;;;;x
+opinion_statusofwomen_defied_highauth;Defied Me;;;;;;;;;;;;x
+opinion_statusofwomen_defied_absauth;Defied Me;;;;;;;;;;;;x
